@@ -16,9 +16,9 @@ var gulp  = require('gulp'),
 
 // gulp sass | compiles sass to destination folder
 gulp.task('sass', function() {
-    gulp.src('styles/main.scss')
+    gulp.src('scss/main.scss')
         .pipe(sass())
-        .pipe(gulp.dest('styles'));
+        .pipe(gulp.dest('css'));
 });
 
 // gulp watch | runs browser sync
