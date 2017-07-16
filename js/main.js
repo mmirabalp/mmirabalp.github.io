@@ -11,3 +11,14 @@ app.config(function($routeProvider) {
         .otherwise("/");
 
 });
+
+
+// Json data projects connection
+app.controller('projectsCtrl', function($scope, $http) {
+
+    $http.get('js/data.json').then(function (response) {
+        $scope.projects = response.data;
+    });
+
+});
+
