@@ -3,10 +3,12 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl : "views/home.htm"
+            templateUrl: "views/home.htm",
+            controller: "homeCtrl"
         })
-        .when("/project", {
-            templateUrl : "views/project.htm"
+        .when("/project/:id", {
+            templateUrl: "views/project.htm",
+            controller: "projectCtrl"
         })
         .otherwise("/");
 
@@ -14,11 +16,19 @@ app.config(function($routeProvider) {
 
 
 // Json data projects connection
-app.controller('projectsCtrl', function($scope, $http) {
+app.controller('homeCtrl', function($scope, $http) {
 
     $http.get('js/data.json').then(function (response) {
         $scope.projects = response.data;
     });
+
+});
+
+// Json data projects connection
+app.controller('projectCtrl', function($scope, $routeParams) {
+
+    console.log( $routeParams.id );
+    console.log( $scope.title );
 
 });
 

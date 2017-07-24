@@ -7,7 +7,7 @@
 </div>
 
 
-<div class="container" ng-controller="projectsCtrl">
+<div class="container">
 
 
     <h1>Projects</h1>
@@ -16,7 +16,7 @@
     <div class="row">
 
         <div class="col-sm-6 col-md-4" ng-repeat="project in projects">
-            <a href="#" class="thumbnail">
+            <a href="#!/project/{{project.id}}" class="thumbnail">
                 <img src="http://placehold.it/400x250" alt="...">
                 <div class="caption">
                     <h3>{{project.title}}</h3>
