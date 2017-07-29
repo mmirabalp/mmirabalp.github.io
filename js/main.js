@@ -6,25 +6,25 @@ app.config(function($routeProvider) {
             templateUrl: "views/home.htm",
             controller: "homeCtrl"
         })
-        .when("/project/:title", {
+        .when("/project/:id", {
             templateUrl: "views/project.htm",
-            controller: "projectCtrl"
+        controller: "projectCtrl"
         })
         .otherwise("/");
 
 });
 
-app.factory('dataAccess', function($http){
-    return {
-        projects : $http.get('js/data.json').then(function(response) {
-            return response;
-
-        })
-
-
-
-    };
-});
+//app.factory('dataAccess', function($http){
+//    return {
+//        projects : $http.get('js/data.json').then(function(response) {
+//            return response;
+//
+//        })
+//
+//
+//
+//    };
+//});
 
 
 
@@ -81,44 +81,73 @@ app.factory("dataAccess", function($http){
 //
 //        }
 
+
+//var deferredObj = new deferred();
+//    var info = null;
+//    deferredObj.resolve(info);
+//
+//    return deferredObj.promise;
+
+
   return{
       infoData : function (){
           return $http.get('js/data.json').then(function(response){
               return response.data;
           });
       }
-
   };
-
-
-
 
 });
 
 
 
-app.controller('homeCtrl', function($scope, dataAccess){
-    console.log(dataAccess);
+app.controller('homeCtrl', function($scope, dataAccess, $q){
 
-
-    dataAccess.infoData().then(function(data){
-        $scope.projects = data;
-
+    $q.all([dataAccess]).then(function(data){
+//        console.log(data[0]);
     });
+
+    dataAccess.infoData().then(function(info){
+        $scope.projects = info;
+        console.log($scope.projects[0].title);
+    });
+
+
+
+
+
+//        dataAccess.infoData().then(function(dataAccess){
+//            $scope.projects = dataAccess;
+//
+//        return $scope.projects;
+//
+//            console.log($scope.projects);
+//
+//    });
+//    console.log(dataAccess.infoData());
 
 
 });
 
 
 app.controller('projectCtrl', function($scope, dataAccess){
-    console.log(dataAccess);
 
+    dataAccess.infoData().then(function(dataAccess){
+        $scope.projects = dataAccess;
+        return $scope.projects;
 
-    dataAccess.infoData().then(function(data){
-        $scope.projects = data;
+        console.log();
 
     });
+//    console.log(dataAccess);
 
+
+
+
+//    dataAccess.infoData().then(function(data){
+//        $scope.projects = data;
+//
+//    });
 
 });
 
