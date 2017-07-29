@@ -12,7 +12,7 @@
     "url": "http://google.com"
   },
   {
-    "id" : 2,
+    "id": 2,
     "title": "Project 2",
     "description": "lorem 1",
     "technologies": [
@@ -24,7 +24,7 @@
     "url": "http://google.com"
   },
   {
-    "id" : 3,
+    "id": 3,
     "title": "Project 3",
     "description": "lorem 1",
     "technologies": [
@@ -35,4 +35,5 @@
     ],
     "url": "http://google.com"
   }
+
 ]
