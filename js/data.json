@@ -9,31 +9,29 @@
       "Tech 3",
       "Tech 4"
     ],
-    "url": "http://google.com"
+    "url": "http://google1.com"
   },
   {
     "id": 2,
     "title": "Project 2",
-    "description": "lorem 1",
+    "description": "description for project 2",
     "technologies": [
-      "Tech 1",
-      "Tech 2",
-      "Tech 3",
-      "Tech 4"
+      "Bootstrap",
+      "Angular js"
     ],
-    "url": "http://google.com"
+    "url": "http://google2.com"
   },
   {
     "id": 3,
     "title": "Project 3",
-    "description": "lorem 1",
+    "description": "description for project 3",
     "technologies": [
-      "Tech 1",
-      "Tech 2",
-      "Tech 3",
-      "Tech 4"
+      "HTML 5",
+      "CSS3",
+      "Node JS",
+      "Express"
     ],
-    "url": "http://google.com"
+    "url": "http://google3.com"
   }
 
 ]
