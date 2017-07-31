@@ -14,11 +14,13 @@
 
 
     <div class="row">
-
+        <!--Using ng-repeat directive to create list of individual projects -->
         <div class="col-sm-6 col-md-4" ng-repeat="project in projects">
+            <!--#!/ -> Root or home, #!/project/ -> project view, #!/project/{{project.id}} -> Single Project ID -->
             <a href="#!/project/{{project.id}}" class="thumbnail">
                 <img src="http://placehold.it/400x250" alt="...">
-                <div class="caption">
+                <div class="img-rounded">
+                    <!-- Showing single project title -->
                     <h3>{{project.title}}</h3>
                 </div>
             </a>
@@ -30,3 +32,5 @@
 
 
 </div>
+
+<script src="..js/main.js"></script>

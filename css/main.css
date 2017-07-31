@@ -1,2 +1,7 @@
-h1 {
-  color: blue; }
+.jumbotron {
+    background-color: #2eb6e4;
+}
+
+.body {
+    background-color: #5bc0de;
+}
