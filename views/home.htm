@@ -1,26 +1,35 @@
-<div class="jumbotron">
-    <div class="container">
-        <h1>Mawel Mirabal Portfolio</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#!project" role="button">Learn more »</a></p>
-    </div>
-</div>
-
-
-<div class="container">
-    <h1>Projects</h1>
-      <div class="row">
-          <!--Using ng-repeat directive to create list of individual projects -->
-          <div class="col-sm-6 col-md-4" ng-repeat="project in projects">
-              <a href="#!/project/{{$index + 1}}" class="thumbnail">
-                  <img src="http://{{image.Asset[$index].fields.file.url}}" alt="{{project.fields.title}} image">
-                  <div class="img-rounded">
-                      <!-- Showing single project title -->
-                      <h3>{{project.fields.title}}</h3>
-                  </div>
-              </a>
+<section>
+  <!-- <div class="jumbotron"> -->
+      <div class="container">
+        <div class="myinfo">
+          <div id="image"class="image">
+            <img src="../images/Gravatar1.jpeg" alt="..." class="rounded-circle">
           </div>
-      </div>
-</div>
+          <h3><label for="image" class="name">Mawel Mirabal</label></h3>
+          <p><label for="image" class="ocupation">Front-End Web Developer.</label></p>
 
-<script src="..js/main.js"></script>
+        </div>
+
+          <p><a class="btn btn-primary btn-lg" href="#!project" role="button">Download Resume »</a></p>
+      </div>
+  <!-- </div> -->
+
+  <div class="container">
+      <h3>Courses Projects</h3>
+        <div class="row">
+            <!--Using ng-repeat directive to create list of individual projects -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="project in projects">
+                <a href="#!/project/{{$index + 1}}" class="thumbnail">
+                    <img src="http://{{image.Asset[$index].fields.file.url}}" alt="{{project.fields.title}} image">
+                    <div class="img-rounded">
+                        <!-- Showing single project title -->
+                        <h3>{{project.fields.title}}</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+  </div>
+
+  <script src="..js/main.js"></script>
+
+</section>
