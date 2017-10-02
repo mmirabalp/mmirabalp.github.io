@@ -73,9 +73,9 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -324,15 +324,15 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
+  font-weight: 300;
+  line-height: 1.2;
   color: inherit; }
 
 h1, .h1 {
   font-size: 2.5rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 1.9rem; }
 
 h3, .h3 {
   font-size: 1.75rem; }
@@ -351,24 +351,24 @@ h6, .h6 {
   font-weight: 300; }
 
 .display-1 {
-  font-size: 6rem;
+  font-size: 5.7rem;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.2; }
 
 .display-2 {
-  font-size: 5.5rem;
+  font-size: 5.3rem;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.2; }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 4.4rem;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.2; }
 
 .display-4 {
   font-size: 3rem;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.2; }
 
 hr {
   margin-top: 1rem;
@@ -868,7 +868,7 @@ mark,
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  padding: 0.8rem 2rem;
   font-size: 1rem;
   line-height: 1.25;
   color: #495057;
@@ -894,7 +894,7 @@ mark,
     opacity: 1; }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px); }
+  height: calc(2.85rem + 2px); }
 
 select.form-control:focus::-ms-value {
   color: #495057;
@@ -905,13 +905,13 @@ select.form-control:focus::-ms-value {
   display: block; }
 
 .col-form-label {
-  padding-top: calc(0.5rem - 1px * 2);
-  padding-bottom: calc(0.5rem - 1px * 2);
+  padding-top: calc(0.8rem - 1px * 2);
+  padding-bottom: calc(0.8rem - 1px * 2);
   margin-bottom: 0; }
 
 .col-form-label-lg {
-  padding-top: calc(0.5rem - 1px * 2);
-  padding-bottom: calc(0.5rem - 1px * 2);
+  padding-top: calc(0.8rem - 1px * 2);
+  padding-bottom: calc(0.8rem - 1px * 2);
   font-size: 1.25rem; }
 
 .col-form-label-sm {
@@ -920,14 +920,14 @@ select.form-control:focus::-ms-value {
   font-size: 0.875rem; }
 
 .col-form-legend {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   margin-bottom: 0;
   font-size: 1rem; }
 
 .form-control-plaintext {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   margin-bottom: 0;
   line-height: 1.25;
   border: solid transparent;
@@ -946,13 +946,13 @@ select.form-control-sm:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px); }
 
 .form-control-lg {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 2.5rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
 select.form-control-lg:not([size]):not([multiple]) {
-  height: calc(2.875rem + 2px); }
+  height: calc(3.475rem + 2px); }
 
 .form-group {
   margin-bottom: 1rem; }
@@ -1148,7 +1148,7 @@ select.form-control-lg:not([size]):not([multiple]) {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.5rem 0.75rem;
+  padding: 0.8rem 2rem;
   font-size: 1rem;
   line-height: 1.25;
   border-radius: 0.25rem;
@@ -1500,7 +1500,7 @@ fieldset[disabled] a.btn {
       text-decoration: none; }
 
 .btn-lg {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 2.5rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
@@ -1699,7 +1699,7 @@ tbody.collapse.show {
 .custom-select {
   display: inline-block;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.85rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.25;
   color: #495057;
@@ -1732,13 +1732,13 @@ tbody.collapse.show {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.85rem + 2px);
   margin-bottom: 0; }
 
 .custom-file-input {
   min-width: 14rem;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.85rem + 2px);
   margin: 0;
   opacity: 0; }
   .custom-file-input:focus ~ .custom-file-control {
@@ -1750,8 +1750,8 @@ tbody.collapse.show {
   right: 0;
   left: 0;
   z-index: 5;
-  height: calc(2.25rem + 2px);
-  padding: 0.5rem 0.75rem;
+  height: calc(2.85rem + 2px);
+  padding: 0.8rem 2rem;
   overflow: hidden;
   line-height: 1.25;
   color: #495057;
@@ -1769,8 +1769,8 @@ tbody.collapse.show {
     right: 0;
     z-index: 6;
     display: block;
-    height: calc(2.25rem + 2px);
-    padding: 0.5rem 0.75rem;
+    height: calc(2.85rem + 2px);
+    padding: 0.8rem 2rem;
     line-height: 1.25;
     color: #495057;
     background-color: #e9ecef;
@@ -4142,27 +4142,80 @@ a.text-dark:focus, a.text-dark:hover {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out; }
 
+.btn:not(.btn-lg),
+.btn:not(.btn-sm) {
+  font-size: 1rem; }
+
 .btn:hover {
-  box-shadow: 0 4px 15px 0 rgba(180, 180, 180, 0.5); }
+  box-shadow: 0 4px 20px 0 rgba(180, 180, 180, 0.6), 0 2px 8px 0 rgba(50, 50, 50, 0.3); }
 
 .btn-primary,
 .btn-outline-primary:hover {
-  border: none;
   background: linear-gradient(90deg, #1B9CD7 0%, #62DC9C 100%); }
 
 .round {
   border-radius: 100px; }
 
-/* Jumbotron styles
+.hero-buttons {
+  margin-top: 40px; }
+  .hero-buttons .btn {
+    margin-right: 16px; }
+
+/* Dark styles
  *******************************************/
 .dark {
   background: linear-gradient(315deg, #2C2C36 0%, #494B57 100%); }
+  .dark .btn:hover {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6); }
 
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark li, .dark a {
   color: #FFFFFF; }
 
-p {
+p:not(.about-title) {
   opacity: 0.5; }
+
+/* Typography
+ *******************************************/
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 300; }
+
+/* About Section
+ *******************************************/
+.about {
+  background-image: url(../images/image-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .about .row {
+    margin-top: 30px;
+    margin-bottom: 80px; }
+
+.about-title {
+  font-size: 20px;
+  line-height: 33px;
+  text-transform: uppercase; }
+
+.social-media-icons {
+  list-style: none;
+  padding-left: 0; }
+  .social-media-icons li {
+    height: 36px;
+    width: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 12px; }
+    .social-media-icons li:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6); }
+    .social-media-icons li a {
+      width: 100%; }
 
 .jumbotron-fluid.hero {
   background-image: url(../images/developer.jpg);
@@ -4191,10 +4244,12 @@ p {
   margin-top: 30px;
   margin-left: 30px; }
 
-.rounded-circle {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%; }
+.avatar {
+  height: 136px;
+  width: 136px;
+  border-radius: 50%;
+  float: right;
+  margin-top: 125px; }
 
 /*.image{
   display: inline-block;

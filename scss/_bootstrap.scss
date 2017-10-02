@@ -12,8 +12,10 @@ $dark-base: #494B57;
 
 /* Utilities Variables
  *******************************************/
-$shadow-default: 0 4px 15px 0 rgba(180,180,180,0.5);
+$shadow-default: 0 4px 20px 0 rgba(180,180,180,0.6), 0 2px 8px 0 rgba(50,50,50,0.3);
+$shadow-dark: 0 4px 20px 0 rgba(0,0,0,0.6);
 $gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
+
 
 
 
@@ -26,6 +28,10 @@ $gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
+.btn:not(.btn-lg),
+.btn:not(.btn-sm) {
+  font-size: 1rem;
+}
 
 .btn:hover {
   box-shadow: $shadow-default;
@@ -33,7 +39,6 @@ $gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
 
 .btn-primary,
 .btn-outline-primary:hover {
-  border: none;
   background: $gradient;
 }
 
@@ -41,11 +46,23 @@ $gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
   border-radius: 100px;
 }
 
+.hero-buttons {
+  margin-top: 40px;
 
-/* Jumbotron styles
+  .btn {
+    margin-right: 16px;
+  }
+}
+
+
+/* Dark styles
  *******************************************/
 .dark {
   background: linear-gradient(315deg, $dark 0%, $dark-base 100%);
+
+  .btn:hover {
+    box-shadow: $shadow-dark;
+  }
 }
 
 .dark {
@@ -54,11 +71,66 @@ $gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
   }
 }
 
-p {
+p:not(.about-title) {
   opacity: 0.5;
 }
 
+/* Typography
+ *******************************************/
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+
+}
 
 
+/* About Section
+ *******************************************/
+.about {
+  background-image: url(../images/image-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .row {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+}
+
+
+.about-title {
+  font-size: 20px;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+.social-media-icons {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    height: 36px;
+    width: 36px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 12px;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+      box-shadow: $shadow-dark;
+    }
+
+    a {
+      width: 100%;
+    }
+  }
+}
 
 
