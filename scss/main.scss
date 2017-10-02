@@ -37,9 +37,10 @@
 }
 
 .social-media-icons {
+
+
   list-style: none;
   padding-left: 0;
-
   li {
     height: 36px;
     width: 36px;
@@ -58,14 +59,40 @@
     a {
       width: 100%;
     }
+
+
+
   }
+
 }
 
+.dev-stack-icons{
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
 
+  li {
+    margin-right: 80px;
+    display: inline;
+  }
+
+}
+
+//.social-media-icons.dev-stack-icons{
+//  height: 0px;
+//  width: 0px;
+//  margin-right: 8px;
+//}
 
 /* Projects Section
  *******************************************/
+.hero-secondary {
+  .web-dev-stack {
+    font-size: 32px;
+    text-align: center;
 
+  }
+
+}
 
 
 

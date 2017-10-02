@@ -4225,8 +4225,19 @@ h1, h2, h3, h4, h5, h6 {
     .social-media-icons li a {
       width: 100%; }
 
+.dev-stack-icons {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important; }
+  .dev-stack-icons li {
+    margin-right: 80px;
+    display: inline; }
+
 /* Projects Section
  *******************************************/
+.hero-secondary .web-dev-stack {
+  font-size: 32px;
+  text-align: center; }
+
 /* Contact Section
  *******************************************/
 /* Footer Section
