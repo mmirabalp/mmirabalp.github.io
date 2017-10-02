@@ -89,48 +89,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* About Section
- *******************************************/
-.about {
-  background-image: url(../images/image-hero.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  .row {
-    margin-top: 30px;
-    margin-bottom: 80px;
-  }
-}
-
-
-.about-title {
-  font-size: 20px;
-  line-height: 33px;
-  text-transform: uppercase;
-}
-
-.social-media-icons {
-  list-style: none;
-  padding-left: 0;
-
-  li {
-    height: 36px;
-    width: 36px;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    margin-right: 12px;
-
-    &:hover {
-      background-color: rgba(255,255,255,0.3);
-      box-shadow: $shadow-dark;
-    }
-
-    a {
-      width: 100%;
-    }
-  }
-}
 
 

@@ -4184,6 +4184,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
   font-weight: 300; }
 
+/* Header Section
+ *******************************************/
 /* About Section
  *******************************************/
 .about {
@@ -4193,6 +4195,12 @@ h1, h2, h3, h4, h5, h6 {
   .about .row {
     margin-top: 30px;
     margin-bottom: 80px; }
+  .about .avatar {
+    height: 136px;
+    width: 136px;
+    border-radius: 50%;
+    float: right;
+    margin-top: 125px; }
 
 .about-title {
   font-size: 20px;
@@ -4217,41 +4225,9 @@ h1, h2, h3, h4, h5, h6 {
     .social-media-icons li a {
       width: 100%; }
 
-.jumbotron-fluid.hero {
-  background-image: url(../images/developer.jpg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  min-height: 350px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover; }
-
-.header_img img {
-  height: 100%;
-  width: 100%; }
-
-.myinfo {
-  margin-top: 30px;
-  margin-left: 30px; }
-
-.avatar {
-  height: 136px;
-  width: 136px;
-  border-radius: 50%;
-  float: right;
-  margin-top: 125px; }
-
-/*.image{
-  display: inline-block;
-  float: left;
-}*/
+/* Projects Section
+ *******************************************/
+/* Contact Section
+ *******************************************/
+/* Footer Section
+ *******************************************/
