@@ -14,6 +14,9 @@ app.config(function($routeProvider) {
             templateUrl: "views/project.htm",
         controller: "projectCtrl"
         })
+        .when("/style", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "views/style.htm"
+        })
         .otherwise("/");   //Default route that goes to HOME.
 
 });

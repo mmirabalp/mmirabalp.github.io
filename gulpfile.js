@@ -28,8 +28,8 @@ gulp.task('watch', function() {
     });
 
     // watches for changes on scss and html files
-    gulp.watch('styles/*.scss', ['sass']);
-    gulp.watch(['styles/*.scss', './*.html']).on('change', reload);
+    gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch(['scss/*.scss', './*.html', './*.htm']).on('change', reload);
 });
 
 // gulp | default runs sass and watch

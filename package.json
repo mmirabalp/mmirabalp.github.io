@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Portfolio for Mawel Mirabal",
   "main": "gulpfile.js",
-  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
