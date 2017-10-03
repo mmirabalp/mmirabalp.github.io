@@ -4186,6 +4186,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header Section
  *******************************************/
+.iconLogo {
+  margin-right: 25px;
+  height: 60px;
+  width: 60px; }
+
 /* About Section
  *******************************************/
 .about {
@@ -4237,6 +4242,43 @@ h1, h2, h3, h4, h5, h6 {
 .hero-secondary .web-dev-stack {
   font-size: 32px;
   text-align: center; }
+
+.projectPictureContainer {
+  width: 100%;
+  margin-bottom: 25; }
+
+.projectInfo {
+  list-style: none;
+  padding-left: 0; }
+  .projectInfo li {
+    padding: 25px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    position: static;
+    margin-right: 12px; }
+
+.linkArrowContainer {
+  margin-top: 50px;
+  align-items: center;
+  position: 50% 50%; }
+
+.link {
+  font-size: 10em;
+  height: 50px;
+  width: 50px; }
+
+.fa-5x {
+  color: white;
+  font-size: 5em;
+  font-size: 10em; }
+
+.projectContainer {
+  background-color: #cce5ff; }
 
 /* Contact Section
  *******************************************/

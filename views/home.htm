@@ -53,24 +53,92 @@
     </section>
 
 
-    <section class="projects">
+    <section class=" jumbotron dark  ">
         <div class="container">
-            <h3 class="projects-title">Courses Projects</h3>
-            <div class="row project">
-                <!--Using ng-repeat directive to create list of individual projects -->
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="project in projects">
-                    <a href="#!/project/{{$index + 1}}" class="thumbnail">
-                        <img src="http://{{image.Asset[$index].fields.file.url}}" alt="{{project.fields.title}} image">
-                        <div class="img-rounded">
-                            <!-- Showing single project title -->
-                            <h3 class="project-title">{{project.fields.title}}</h3>
-                        </div>
-                    </a>
+            <div class="row col-md-12 col-lg-12 ">
+                <div class="col-md-2 col-lg-3 projectPicture">
+                    <div class="image">
+                        <img src="../images/mawel-mirabal-avatar.png" alt="..." class="avatar">
+                    </div>
+                </div>
+                <div class="col-lg-8 projectInfoSection">
+                    <h1 class="display-4">Restaurant Landing Page</h1>
+                    <p class="about-title">Restaurant Landing Page</p>
+                    <p>Technologies</p>
+                    <ul class="projectInfo">
+                        <li>HTML 5</li>
+                        <li>SCSS</li>
+                        <li>BOOTSTRAP</li>
+                        <li>jQUERY</li>
+                        <li>GEO-LOCATION</li>
+                    </ul>
+
+
+                </div>
+                <div class="col-lg-1 linkArrowContainer">
+                    <i class="fa fa-chevron-right fa-5x linkArrow" aria-hidden="true"></i>
+
                 </div>
             </div>
         </div>
-
     </section>
+
+
+    <section class=" jumbotron   ">
+        <div class="container dark projectContainer">
+            <div class="row col-md-12 col-lg-12 ">
+                <div class="col-md-2 col-lg-3 projectPictureContainer">
+                    <div class="projectPicture">
+                        <img src="../images/mawel-mirabal-avatar.png" alt="..." class="avatar">
+                    </div>
+                </div>
+                <div class="col-lg-8 projectInfoSection">
+                    <h1 class="display-4">Restaurant Landing Page</h1>
+                    <p class="about-title">Restaurant Landing Page</p>
+                    <p>Technologies</p>
+                    <ul class="projectInfo">
+                        <li>HTML 5</li>
+                        <li>SCSS</li>
+                        <li>BOOTSTRAP</li>
+                        <li>jQUERY</li>
+                        <li>GEO-LOCATION</li>
+                    </ul>
+
+
+                </div>
+                <div class="col-lg-1 linkArrowContainer">
+                    <i class="fa fa-chevron-right fa-5x linkArrow" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+                <!--Using ng-repeat directive to create list of individual projects -->
+                <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="project in projects">-->
+                    <!--<a href="#!/project/{{$index + 1}}" class="thumbnail">-->
+                        <!--<img src="http://{{image.Asset[$index].fields.file.url}}" alt="{{project.fields.title}} image">-->
+                        <!--<div class="img-rounded">-->
+                            <!--&lt;!&ndash; Showing single project title &ndash;&gt;-->
+                            <!--<h3 class="project-title">{{project.fields.title}}</h3>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+
+
+
+
+
 
 
 
