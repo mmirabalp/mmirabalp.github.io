@@ -42,73 +42,36 @@
                             <li><img src="../images/icon-php.svg" alt=""></li>
                             <li><img src="../images/icon-sql.svg" alt=""></li>
                         </ul>
-
                     </div>
-
-
                 </div>
             </div>
-
         </div>
     </section>
 
 
-    <section class=" jumbotron dark  ">
-        <div class="container">
-            <div class="row col-md-12 col-lg-12 ">
+    <section class="">
+        <div class="container projectContainer" ng-repeat="project in projects">
+            <div class="row col-md-12 col-lg-12">
                 <div class="col-md-2 col-lg-3 projectPicture">
-                    <div class="image">
-                        <img src="../images/mawel-mirabal-avatar.png" alt="..." class="avatar">
+                    <div class="projectImage">
+                        <img class="image" src="http://{{image.Asset[$index].fields.file.url}}"
+                             alt="{{project.fields.title}} image">
+                        <!--<img src="../images/mawel-mirabal-avatar.png" alt="..." class="avatar">-->
                     </div>
                 </div>
                 <div class="col-lg-8 projectInfoSection">
-                    <h1 class="display-4">Restaurant Landing Page</h1>
-                    <p class="about-title">Restaurant Landing Page</p>
+                    <h3 class="display-4 project-title">{{project.fields.title}}</h3>
+                    <!--<h1 class="display-4">Restaurant Landing Page</h1>-->
+                    <!--<p class="about-title">Restaurant Landing Page</p>-->
                     <p>Technologies</p>
-                    <ul class="projectInfo">
-                        <li>HTML 5</li>
-                        <li>SCSS</li>
-                        <li>BOOTSTRAP</li>
-                        <li>jQUERY</li>
-                        <li>GEO-LOCATION</li>
+                    <ul class="projectInfo" ng-repeat="projects in project.fields.technologies">
+                        <li class="btn techList">{{projects}} </li>
                     </ul>
-
-
                 </div>
                 <div class="col-lg-1 linkArrowContainer">
-                    <i class="fa fa-chevron-right fa-5x linkArrow" aria-hidden="true"></i>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class=" jumbotron   ">
-        <div class="container dark projectContainer">
-            <div class="row col-md-12 col-lg-12 ">
-                <div class="col-md-2 col-lg-3 projectPictureContainer">
-                    <div class="projectPicture">
-                        <img src="../images/mawel-mirabal-avatar.png" alt="..." class="avatar">
-                    </div>
-                </div>
-                <div class="col-lg-8 projectInfoSection">
-                    <h1 class="display-4">Restaurant Landing Page</h1>
-                    <p class="about-title">Restaurant Landing Page</p>
-                    <p>Technologies</p>
-                    <ul class="projectInfo">
-                        <li>HTML 5</li>
-                        <li>SCSS</li>
-                        <li>BOOTSTRAP</li>
-                        <li>jQUERY</li>
-                        <li>GEO-LOCATION</li>
-                    </ul>
-
-
-                </div>
-                <div class="col-lg-1 linkArrowContainer">
-                    <i class="fa fa-chevron-right fa-5x linkArrow" aria-hidden="true"></i>
-
+                    <a href="#!/project/{{$index + 1}}" class="thumbnail">
+                        <i class="fa fa-chevron-right fa-5x linkArrow" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -124,16 +87,20 @@
 
 
 
-                <!--Using ng-repeat directive to create list of individual projects -->
-                <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="project in projects">-->
-                    <!--<a href="#!/project/{{$index + 1}}" class="thumbnail">-->
-                        <!--<img src="http://{{image.Asset[$index].fields.file.url}}" alt="{{project.fields.title}} image">-->
-                        <!--<div class="img-rounded">-->
-                            <!--&lt;!&ndash; Showing single project title &ndash;&gt;-->
-                            <!--<h3 class="project-title">{{project.fields.title}}</h3>-->
-                        <!--</div>-->
-                    <!--</a>-->
+
+
+
+
+        <!--Using ng-repeat directive to create list of individual projects -->
+        <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="project in projects">-->
+            <!--<a href="#!/project/{{$index + 1}}" class="thumbnail">-->
+                <!--<img src="http://{{image.Asset[$index].fields.file.url}}" alt="{{project.fields.title}} image">-->
+                <!--<div class="img-rounded">-->
+                    <!--&lt;!&ndash; Showing single project title &ndash;&gt;-->
+                    <!--<h3 class="project-title">{{project.fields.title}}</h3>-->
                 <!--</div>-->
+            <!--</a>-->
+        <!--</div>-->
 
 
 

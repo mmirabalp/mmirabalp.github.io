@@ -4231,8 +4231,8 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%; }
 
 .dev-stack-icons {
-  margin-top: 60px !important;
-  margin-bottom: 60px !important; }
+  margin-top: 60px;
+  margin-bottom: 60px; }
   .dev-stack-icons li {
     margin-right: 80px;
     display: inline; }
@@ -4243,14 +4243,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 32px;
   text-align: center; }
 
+.projectContainer {
+  margin: 20px 100px 20px 100px;
+  padding: 15px;
+  border-width: 60px;
+  border-color: #3b3b46;
+  background-color: white; }
+
 .projectPictureContainer {
   width: 100%;
+  height: 100%;
   margin-bottom: 25; }
 
 .projectInfo {
   list-style: none;
   padding-left: 0; }
   .projectInfo li {
+    border-color: aquamarine;
     padding: 25px;
     height: 36px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -4273,12 +4282,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 50px; }
 
 .fa-5x {
-  color: white;
+  color: #3b3b46;
   font-size: 5em;
   font-size: 10em; }
 
-.projectContainer {
-  background-color: #cce5ff; }
+.image {
+  width: 239px;
+  height: 434px; }
 
 /* Contact Section
  *******************************************/
