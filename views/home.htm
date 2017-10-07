@@ -18,8 +18,6 @@
                         <li><a href="https://codepen.io/mmirabalp/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/mawel-mirabal-b63b9b4b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
-
-
                     <div class="hero-buttons">
                         <a class="btn btn-outline-primary round" href="#" role="button">My Resume</a>
                         <a class="btn btn-primary round" href="#" role="button">Hire Me</a>
@@ -48,68 +46,36 @@
         </div>
     </section>
 
-
-    <section class="">
-        <div class="container projectContainer" ng-repeat="project in projects">
-            <div class="row col-md-12 col-lg-12">
-                <div class="col-md-2 col-lg-3 projectPicture">
-                    <div class="projectImage">
-                        <img class="image" src="http://{{image.Asset[$index].fields.file.url}}"
-                             alt="{{project.fields.title}} image">
-                        <!--<img src="../images/mawel-mirabal-avatar.png" alt="..." class="avatar">-->
+    <section class="projectsContainer">
+        <div class="container" ng-repeat="project in projects">
+            <div class="row .col-sm-12.col-md-12.col-lg-12.col-xl-12">
+                <div class="">
+                    <div class="">
+                        <div class="projectContainer">
+                            <div class="projectImage">
+                                <img class="image" src="http://{{image.Asset[$index].fields.file.url}}"
+                                     alt="{{project.fields.title}} image">
+                            </div>
+                            <div class="projectInfo">
+                                <h3 class="title">{{project.fields.title}}</h3>
+                                <p class="about-title">Technologies</p>
+                                    <div class="techStack">
+                                        <ul class="projectInfo" ng-repeat="projects in project.fields.technologies">
+                                            <li class="btn techList">{{projects}} </li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div class="linkArrowContainer">
+                                <a href="#!/project/{{$index + 1}}" class="thumbnail">
+                                    <i class="fa fa-chevron-right fa-5x linkArrow" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-8 projectInfoSection">
-                    <h3 class="display-4 project-title">{{project.fields.title}}</h3>
-                    <!--<h1 class="display-4">Restaurant Landing Page</h1>-->
-                    <!--<p class="about-title">Restaurant Landing Page</p>-->
-                    <p>Technologies</p>
-                    <ul class="projectInfo" ng-repeat="projects in project.fields.technologies">
-                        <li class="btn techList">{{projects}} </li>
-                    </ul>
-                </div>
-                <div class="col-lg-1 linkArrowContainer">
-                    <a href="#!/project/{{$index + 1}}" class="thumbnail">
-                        <i class="fa fa-chevron-right fa-5x linkArrow" aria-hidden="true"></i>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--Using ng-repeat directive to create list of individual projects -->
-        <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="project in projects">-->
-            <!--<a href="#!/project/{{$index + 1}}" class="thumbnail">-->
-                <!--<img src="http://{{image.Asset[$index].fields.file.url}}" alt="{{project.fields.title}} image">-->
-                <!--<div class="img-rounded">-->
-                    <!--&lt;!&ndash; Showing single project title &ndash;&gt;-->
-                    <!--<h3 class="project-title">{{project.fields.title}}</h3>-->
-                <!--</div>-->
-            <!--</a>-->
-        <!--</div>-->
-
-
-
-
-
-
-
-
-
 
   <script src="..js/main.js"></script>
 
