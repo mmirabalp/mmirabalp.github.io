@@ -1,8 +1,39 @@
 @import "bootstrap.scss";
+@import "home.scss";
+@import "project.scss";
+
+
+
+header,
+footer {
+ height: 96px;
+}
+
+#about,
+#dev-stack,
+#projects,
+#project,
+#contact {
+  padding: 100px 0;
+
+  h2.section-title {
+    font-size: 44px;
+    margin-bottom: 60px;
+  }
+}
+
+.card {
+  border: 1px solid #f2f2f2;
+  transition: all 0.15s ease-in-out;
+}
 
 
 /* Header Section
  *******************************************/
+.navbarTogglerDemo01 a {
+  color: white;
+}
+
 .iconLogo{
   margin-right: 25px;
   height: 60px;
@@ -10,198 +41,40 @@
 }
 
 
-
-
-/* About Section
- *******************************************/
-.about {
-  background-image: url(../images/image-hero.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .row {
-    margin-top: 30px;
-    margin-bottom: 80px;
-  }
-
-  .avatar {
-    height: 136px;
-    width: 136px;
-    border-radius: 50%;
-    float: right;
-    margin-top: 125px;
-  }
-}
-
-
-.about-title {
-  font-size: 20px;
-  line-height: 33px;
-  text-transform: uppercase;
-}
-
-.social-media-icons {
-
-
-  list-style: none;
-  padding-left: 0;
-  li {
-    height: 36px;
-    width: 36px;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    margin-right: 12px;
-
-    &:hover {
-      background-color: rgba(255,255,255,0.3);
-      box-shadow: $shadow-dark;
-    }
-
-    a {
-      width: 100%;
-    }
-
-
-
-  }
-
-}
-
-.dev-stack-icons{
-  margin-top: 60px;
-  margin-bottom: 60px;
-
-  li {
-    margin-right: 80px;
-    display: inline;
-  }
-
-}
-
-//.social-media-icons.dev-stack-icons{
-//  height: 0px;
-//  width: 0px;
-//  margin-right: 8px;
-//}
-
-
-
-/* Projects Section
- *******************************************/
-.hero-secondary {
-  .web-dev-stack {
-    font-size: 32px;
-    text-align: center;
-
-  }
-}
-
-.projectContainer {
-  height: 237px;
-  width: 1141px;
-  display: inline-flex;
-  margin: 10px 10px 10px 10px;
-  padding: 15px;
-  border-width: 60px;
-  border-color: rgb(59, 59, 70);
-  background-color: white;
-}
-
-
-.projectPictureContainer {
-  width: 100%;
-  height: 100%;
-  //background-color: red;
-  margin-bottom: 25px;
-}
-
-.projectInfo {
-
-  list-style: none;
-  padding-left: 0;
-  li {
-    border-color: aquamarine;
-    //padding: 25px;
-    height: 18px;
-    //background-color: rgba(255,255,255,0.1);
-    border-radius: 15%;
-    display: inline-flex;
-    align-items: center;
-    //text-align: center;
-    //align-content: center;
-
-    //position: static;
-
-    //margin-right: 12px;
-
-    //&:hover {
-    //  background-color: rgba(255,255,255,0.3);
-    //  box-shadow: $shadow-dark;
-    //}
-
-
-  }
-  margin: 10px 10px 10px 10px;
-}
-
-.linkArrowContainer {
-  display: inline-flex;
-  margin-top: 50px;
-  align-items: center;
-  position: 50% 50% 50% 50%;
-}
-
-.link {
-  font-size: 10em;
-  height: 50px;
-  width: 50px;
-
-}
-.fa-5x {
-  color: rgb(59, 59, 70);
-  font-size: 5em;
-
-}
-
-.image {
-  height: 190.4px;
-  width: 307.2px;
-  opacity: 0.46;
-  background-color: #494B57;
-  background-size: cover;
-}
-
-.techStack {
-  display: inline-flex;
-}
-
-
-
 /* Contact Section
  *******************************************/
-.contactRow {
-  display: unset;
-  height: 100vh;
-  width: 100%;
-  padding: 100px 100px 100px 100px;
-}
-.contactForm {
-  height: 358.4px;
-  width: 396px;
+#contact {
+  p {
+    text-align: center;
+  }
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  textarea {
+    height: 140px;
+  }
 }
 
-.input {
-  width: 100%;
 
-}
-
-.contactMe {
-  margin-top: 50px;
-}
 
 
 /* Footer Section
  *******************************************/
+
+footer {
+  padding: 20px;
+
+  .social-media-icons, p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
+}

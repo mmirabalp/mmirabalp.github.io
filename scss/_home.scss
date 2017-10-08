@@ -1,0 +1,201 @@
+
+/* ABOUT SECTION
+ *******************************************/
+#about {
+  background-image: url(../images/image-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .row {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+
+  .avatar {
+    height: 136px;
+    width: 136px;
+    border-radius: 50%;
+    float: right;
+    margin-top: 125px;
+  }
+}
+
+
+.about-title {
+  font-size: 20px;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+.social-media-icons {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    height: 36px;
+    width: 36px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 12px;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+      box-shadow: $shadow-dark;
+    }
+
+    a {
+      width: 100%;
+    }
+
+  }
+
+}
+
+.dev-stack-icons{
+  padding: 0;
+  text-align: center;
+
+  li {
+    margin: 40px;
+    display: inline;
+  }
+
+}
+
+
+
+/* DEV STACK SECTION
+ *******************************************/
+.hero-secondary {
+  .web-dev-stack {
+    font-size: 32px;
+    text-align: center;
+
+  }
+}
+
+
+
+/* PROJECTS SECTION
+ *******************************************/
+.project-container {
+  background-color: white;
+  margin-bottom: 30px;
+  display: inline;
+
+  &:hover {
+    box-shadow: $shadow-default;
+
+    &:after {
+      transition: opacity .15s ease-in-out;
+      opacity: 0.1;
+    }
+  }
+
+  // FONT AWESOME ANGLE ICON
+  &:after {
+    content: "\f105";
+    font-family: "fontawesome";
+    font-size: 60px;
+    float: right;
+    color: #1b1e21;
+    opacity: 0;
+    display: block;
+    top: 25%;
+    right: 10px;
+    position: relative;
+    transition: opacity .15s ease-in-out;
+  }
+
+  .project-thumbnail,
+  .project-info {
+    display: block;
+    float: left;
+  }
+
+  .project-thumbnail {
+    margin-left: -15px;
+    height: 180px;
+    width: 320px;
+    background-color: $dark;
+    background-size: cover;
+
+    &:after {
+      content: "";
+      background: $dark;
+      display: block;
+      height: inherit;
+      opacity: 0.2;
+    }
+
+  }
+
+
+  .project-info {
+    padding: 20px;
+    .title {
+      color: #2C2C36;
+      margin-bottom: 30px;
+    }
+    p {
+      color: #08131F;
+      margin: 10px 0;
+    }
+
+    .tech-list {
+      display: inline-flex;
+      list-style: none;
+      padding-left: 0;
+
+      .tech {
+        border: 1px solid $blue;
+        color: $blue;
+        height: 28px;
+        border-radius: 4px;
+        display: inline-flex;
+        align-items: center;
+        margin-right: 14px;
+        font-size: 14px;
+        padding: 0 15px;
+        text-transform: lowercase;
+      }
+
+    }
+
+    .link {
+      .fa {
+        display: inline-flex;
+        margin-top: 50px;
+        align-items: center;
+        position: 50% 50% 50% 50%;
+
+        color: #595970;
+        font-size: 5em;
+      }
+
+    }
+
+
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

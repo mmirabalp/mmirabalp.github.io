@@ -66,13 +66,17 @@ $gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
 }
 
 .dark {
-  h1, h2, h3, h4, h5, h6, p, li, a{
+  h1, h2, h3, h4, h5, h6, p, li, a {
     color: #FFFFFF;
   }
 }
 
 p:not(.about-title) {
   opacity: 0.5;
+}
+
+.bg-grey {
+  background-color: #F8F9F9;
 }
 
 /* Typography
@@ -85,7 +89,6 @@ p:not(.about-title) {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
   font-weight: 300;
-
 }
 
 
