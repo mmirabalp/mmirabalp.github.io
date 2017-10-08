@@ -17,6 +17,11 @@ app.config(function($routeProvider) {
         .when("/style", { //'_______'/:id . is a variable value that  $routeParams is going to get.
             templateUrl: "views/style.htm"
         })
+
+        .when("/reportcard-master", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "reportcard-master/intex.html"
+        })
+
         .otherwise("/");   //Default route that goes to HOME.
 
 });
