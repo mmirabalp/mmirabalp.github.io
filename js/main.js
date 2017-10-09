@@ -18,9 +18,17 @@ app.config(function($routeProvider) {
             templateUrl: "views/style.htm"
         })
 
-        .when("/reportcard-master", { //'_______'/:id . is a variable value that  $routeParams is going to get.
-            templateUrl: "reportcard-master/intex.html"
+        .when("/resume", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "views/resume.htm"
         })
+        .when("/education", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "views/education.htm"
+        })
+
+        .when("/schools", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "views/schools.htm"
+        })
+
 
         .otherwise("/");   //Default route that goes to HOME.
 
@@ -78,3 +86,10 @@ app.controller('projectCtrl', function($routeParams, $scope, dataAccess, $q){
         });
     });
 });
+
+
+// app.controller('educationCtrl', function($routeParams, $scope, $q){
+//
+//
+// });
+
