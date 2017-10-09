@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css/main.css">
     <meta content='Mawel' name='description'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <!--CSS for SCHOOL BADGES-->
+    <link rel="stylesheet" href="css/education.css">
 
 </head>
 <body class="body">
-
-
 
     <!-- NAVIGATION SECTION
     *********************** -->
@@ -43,6 +43,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!resume">Resume</a>
+                    </li>
                 </ul>
 
                 <a class="btn btn-outline-primary round" href="#contactMe">Contact</a>
@@ -57,12 +63,31 @@
         </nav>
     </header>
 
-
-
-
     <!-- ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE INSIDE
     ********************************************************* -->
     <ng-view></ng-view>
+
+
+    <section id="education">
+        <div class="container treehouse-badges">
+            <h4><img src="images/Treehouse-Logo%20(1).png" alt="Team TreeHouse Icon">Badges Show <input
+                    type="checkbox"
+                    ng-model="myVar"></h4>
+            <div ng-show="myVar">
+                <h1></h1>
+                <!-- Badges Container -->
+                <div class="badge-container">
+
+                    <!-- Title Markup -->
+                    <h1 id="treehouse-count"></h1>
+
+                    <!-- ul tag where badge li's are appended -->
+                    <ul id="badges"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -104,9 +129,6 @@
         </div>
     </section>
 
-
-
-
     <!-- CONTACT SECTION
     ********************* -->
     <footer class="dark">
@@ -126,7 +148,14 @@
     <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
     <script src="js/navigation.js"></script>
+
     <script src="js/main.js"></script>
+
+    <!--SCHOOL BADGES-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/education.js"></script>
 
 
 </body>

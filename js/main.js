@@ -17,6 +17,19 @@ app.config(function($routeProvider) {
         .when("/style", { //'_______'/:id . is a variable value that  $routeParams is going to get.
             templateUrl: "views/style.htm"
         })
+
+        .when("/resume", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "views/resume.htm"
+        })
+        .when("/education", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "views/education.htm"
+        })
+
+        .when("/schools", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "views/schools.htm"
+        })
+
+
         .otherwise("/");   //Default route that goes to HOME.
 
 });
@@ -73,3 +86,10 @@ app.controller('projectCtrl', function($routeParams, $scope, dataAccess, $q){
         });
     });
 });
+
+
+// app.controller('educationCtrl', function($routeParams, $scope, $q){
+//
+//
+// });
+
