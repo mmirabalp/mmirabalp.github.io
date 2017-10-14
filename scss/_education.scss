@@ -7,13 +7,7 @@ $size-circle: 12.5em;
 $size-thickness: 2.5em;
 $size-inner: $size-circle - $size-thickness * 2;
 
-// resets
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: $color-primary;
-}
+
 
 // clearfix
 .group:after {content:"";display:table;clear:both;}
