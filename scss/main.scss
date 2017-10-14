@@ -8,7 +8,7 @@ footer {
  height: 96px;
 }
 
-#about,
+#about,<h1 class="display-4">Web Developer For Hire</h1>
 #dev-stack,
 #projects,
 #project,
@@ -39,6 +39,21 @@ footer {
   width: 60px;
 }
 
+
+
+
+.container.treehouse-badges:not(ng-show){
+  ul{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    li{
+      padding-right: 25px;
+    }
+  }
+
+}
 
 /* Contact Section
  *******************************************/

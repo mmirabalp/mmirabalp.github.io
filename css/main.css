@@ -4319,8 +4319,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /*color: #222222; */
-}
+  color: #222222; }
 
 .group:after {
   content: "";
@@ -4426,6 +4425,14 @@ footer {
   margin-right: 25px;
   height: 60px;
   width: 60px; }
+
+.container.treehouse-badges:not(ng-show) ul {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none; }
+  .container.treehouse-badges:not(ng-show) ul li {
+    padding-right: 25px; }
 
 /* Contact Section
  *******************************************/

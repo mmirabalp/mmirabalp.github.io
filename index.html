@@ -46,9 +46,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#!education">Education</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#!resume">Resume</a>
-                    </li>
+
                 </ul>
 
                 <a class="btn btn-outline-primary round" href="#contactMe">Contact</a>
@@ -70,21 +68,45 @@
 
     <section id="education">
         <div class="container treehouse-badges">
-            <h4><img src="images/Treehouse-Logo%20(1).png" alt="Team TreeHouse Icon">Badges Show <input
-                    type="checkbox"
-                    ng-model="myVar"></h4>
-            <div ng-show="myVar">
-                <h1></h1>
-                <!-- Badges Container -->
-                <div class="badge-container">
+            <ul>
+                <li>
+                    <h4><img src="images/Treehouse-Logo%20(1).png" alt="Team TreeHouse Icon">Badges Show <input
+                            type="checkbox"
+                            ng-model="myVar"></h4>
 
-                    <!-- Title Markup -->
-                    <h1 id="treehouse-count"></h1>
 
-                    <!-- ul tag where badge li's are appended -->
-                    <ul id="badges"></ul>
+                </li>
+                <div ng-show="myVar">
+                    <h1></h1>
+                    <!-- Badges Container -->
+                    <div class="badge-container">
+
+                        <!-- Title Markup -->
+                        <h1 id="treehouse-count"></h1>
+
+                        <!-- ul tag where badge li's are appended -->
+                        <ul id="badges"></ul>
+                    </div>
                 </div>
-            </div>
+                <li>
+                    <h4><img src="images/itt-tech.png" alt="Itt-Tech Icon">
+                    </h4>
+
+                </li>
+
+                <li>
+                    <h4><img src="images/codeschool_Logo-horizontal.png" alt="Code School Icon">
+                    </h4>
+
+                </li>
+
+            </ul>
+
+
+
+
+
+
         </div>
     </section>
 

@@ -18,9 +18,6 @@ app.config(function($routeProvider) {
             templateUrl: "views/style.htm"
         })
 
-        .when("/resume", { //'_______'/:id . is a variable value that  $routeParams is going to get.
-            templateUrl: "views/resume.htm"
-        })
         .when("/education", { //'_______'/:id . is a variable value that  $routeParams is going to get.
             templateUrl: "views/education.htm"
         })
