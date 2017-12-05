@@ -18,13 +18,6 @@ app.config(function($routeProvider) {
             templateUrl: "views/style.htm"
         })
 
-        .when("/education", { //'_______'/:id . is a variable value that  $routeParams is going to get.
-            templateUrl: "views/education.htm"
-        })
-
-        .when("/schools", { //'_______'/:id . is a variable value that  $routeParams is going to get.
-            templateUrl: "views/schools.htm"
-        })
 
 
         .otherwise("/");   //Default route that goes to HOME.

@@ -13,7 +13,9 @@
     <meta content='Mawel' name='description'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <!--CSS for SCHOOL BADGES-->
-    <link rel="stylesheet" href="css/education.css">
+    <!--<link rel="stylesheet" href="css/education.css">-->
+
+
 
 </head>
 <body class="body">
@@ -21,8 +23,11 @@
     <!-- NAVIGATION SECTION
     *********************** -->
     <header class="navigation dark">
-        <nav class="navbar navbar-expand-lg justify-content-end">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg justify-content-end fixed-top navigation dark">
+            <div class="container-fluid">
+            <button id= "navbar-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbar-nav"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -43,9 +48,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#!education">Education</a>
-                    </li>
 
                 </ul>
 
@@ -57,102 +59,23 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            </div>
         </nav>
     </header>
+
+
+
+
+
+
+
 
     <!-- ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE INSIDE
     ********************************************************* -->
     <ng-view></ng-view>
 
 
-    <section id="education">
-        <div class="container treehouse-badges">
-            <ul>
-                <li>
-                    <h4><img src="images/Treehouse-Logo%20(1).png" alt="Team TreeHouse Icon">Badges Show <input
-                            type="checkbox"
-                            ng-model="myVar"></h4>
 
-
-                </li>
-                <div ng-show="myVar">
-                    <h1></h1>
-                    <!-- Badges Container -->
-                    <div class="badge-container">
-
-                        <!-- Title Markup -->
-                        <h1 id="treehouse-count"></h1>
-
-                        <!-- ul tag where badge li's are appended -->
-                        <ul id="badges"></ul>
-                    </div>
-                </div>
-                <li>
-                    <h4><img src="images/itt-tech.png" alt="Itt-Tech Icon">
-                    </h4>
-
-                </li>
-
-                <li>
-                    <h4><img src="images/codeschool_Logo-horizontal.png" alt="Code School Icon">
-                    </h4>
-
-                </li>
-
-            </ul>
-
-
-
-
-
-
-        </div>
-    </section>
-
-
-
-
-
-    <!-- CONTACT SECTION
-    ********************* -->
-    <section id="contact" class="dark">
-        <div class="container">
-            <h2 class="section-title text-center">Let's Talk</h2>
-
-            <div class="row justify-content-center">
-
-               <div class="col-lg-5">
-                   <p class=''>If you have any questions or have open opportunities,
-                       feel free to send me a message here.</p>
-
-                   <form action='https://formspree.io/mmirabalp@gmail.com' class='contactForm'
-                         id='contact_form' method='POST'>
-
-                       <input name='email' placeholder='Email'
-                              required type='email'>
-
-
-                       <input name='text' placeholder='Name'
-                              required
-                              type='text'>
-
-
-                       <textarea class='input inputMessage' name='body'
-                                 placeholder='Message'
-                                 required></textarea>
-
-                       <button class='btn btn-primary btn-block round' type='submit'>Submit</button>
-
-                   </form>
-               </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION
-    ********************* -->
     <footer class="dark">
         <ul class="social-media-icons">
             <li><a href="https://github.com/mmirabalp"><i class="fa fa-github" aria-hidden="true"></i></a></li>
@@ -173,11 +96,6 @@
 
     <script src="js/main.js"></script>
 
-    <!--SCHOOL BADGES-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <script src="js/education.js"></script>
 
 
 </body>

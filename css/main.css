@@ -9,7 +9,6 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @media print {
   *,
   *::before,
@@ -4229,7 +4228,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .dev-stack-icons {
   padding: 0;
-  text-align: center; }
+  /*text-align: center; */
+}
   .dev-stack-icons li {
     margin: 40px;
     display: inline; }
