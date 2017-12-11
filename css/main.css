@@ -4228,8 +4228,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dev-stack-icons {
   padding: 0;
-  /*text-align: center; */
-}
+  text-align: center; }
   .dev-stack-icons li {
     margin: 40px;
     display: inline; }
@@ -4280,7 +4279,7 @@ h1, h2, h3, h4, h5, h6 {
       height: inherit;
       opacity: 0.2; }
   .project-container .project-info {
-    padding: 20px; }
+    padding: 10px 0px 10px 10px; }
     .project-container .project-info .title {
       color: #2C2C36;
       margin-bottom: 30px; }
@@ -4300,7 +4299,7 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center;
         margin-right: 14px;
         font-size: 14px;
-        padding: 0 15px;
+        padding: 0 10px;
         text-transform: lowercase; }
     .project-container .project-info .link .fa {
       display: inline-flex;
@@ -4314,79 +4313,6 @@ h1, h2, h3, h4, h5, h6 {
  *******************************************/
 .project-details {
   box-shadow: 0 4px 20px 0 rgba(180, 180, 180, 0.6), 0 2px 8px 0 rgba(50, 50, 50, 0.3); }
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-body {
-  font-family: "Open Sans", Arial;
-  background: #f9f9f9; }
-  body a {
-    text-decoration: none; }
-  body .team-treehouse h1, body .team-treehouse h2 {
-    text-align: center; }
-  body .team-treehouse h2 {
-    font-weight: normal; }
-
-.pieChart {
-  width: 25.5em;
-  margin: 0 auto;
-  padding-top: 1em; }
-
-.pie {
-  height: 12.5em;
-  width: 12.5em;
-  position: relative;
-  float: left; }
-  .pie::before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 7.5em;
-    height: 7.5em;
-    background: #f9f9f9;
-    border-radius: 50%;
-    top: 2.5em;
-    left: 2.5em; }
-
-.slice {
-  position: absolute;
-  width: 12.5em;
-  height: 12.5em;
-  clip: rect(0px, 12.5em, 12.5em, 6.25em);
-  animation: bake-pie 1s; }
-  .slice span {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    width: 12.5em;
-    height: 12.5em;
-    border-radius: 50%;
-    clip: rect(0px, 12.5em, 12.5em, 6.25em); }
-
-.legend {
-  width: 13em;
-  padding-left: 1em;
-  float: left; }
-  .legend ul {
-    list-style-type: none;
-    list-style-position: inside;
-    font-size: 0.8em; }
-  .legend li {
-    height: 1.25em;
-    margin-bottom: 0.7em;
-    padding-left: 0.5em;
-    border-left: 1.25em solid black; }
-  .legend em {
-    font-style: normal; }
-  .legend span {
-    float: right;
-    font-weight: bold; }
 
 header,
 footer {
