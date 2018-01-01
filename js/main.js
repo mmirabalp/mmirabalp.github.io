@@ -28,11 +28,12 @@ app.config(function($routeProvider) {
 
 
 //DECLARING A SERVICE 'Factory' to share data between controller and views
-app.factory("dataAccess", function($http){   //dataAccess is the name of the Factory and $http is a directive that is being injecting for get Json.
+app.factory("dataAccess", function($https){   //dataAccess is the name of the Factory and $http is a directive that is being injecting for get Json.
    return{    //Factory return an object
        apiData : function (){  //Inside the object, declare a function to return the call to Json file, data will come back in a 'Promise'...
-          return $http.get('https://cdn.contentful.com/spaces/pvdxttzvgb3d/entries?access_token=24069431a8de8798be8e2e778db2ab42ed42942b6dfca4bc3e5523bee336d1c7').then(function(response){  //response is a variable that will hold the promise, it has a value 'data'.
+          return $https.get('https://cdn.contentful.com/spaces/pvdxttzvgb3d/entries?access_token=24069431a8de8798be8e2e778db2ab42ed42942b6dfca4bc3e5523bee336d1c7').then(function(response){  //response is a variable that will hold the promise, it has a value 'data'.
               return response.data; //return response.data if the call to Json file is success.
+              console.log(response.data);
           });
         }
     };
