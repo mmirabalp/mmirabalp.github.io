@@ -18,10 +18,6 @@ app.config(function($routeProvider) {
             templateUrl: "views/style.htm"
         })
 
-
-
-
-
         .otherwise("/");   //Default route that goes to HOME.
 
 });
