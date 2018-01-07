@@ -8,15 +8,17 @@ app.config(function($routeProvider) {
     $routeProvider
         .when("/", {   //(when) is a method inside $routeProvider directive
             templateUrl: "views/home.htm",   //templateUrl contain the browser route as it is there...
-        controller: "homeCtrl"   //Declaring de controller that is going to control this view: "views/home.htm" when the user go to that route in browser
+            controller: "homeCtrl"   //Declaring de controller that is going to control this view: "views/home.htm" when the user go to that route in browser
         })
         .when("/project/:id", { //'_______'/:id . is a variable value that  $routeParams is going to get.
             templateUrl: "views/project.htm",
-        controller: "projectCtrl"
+            controller: "projectCtrl"
         })
         .when("/style", { //'_______'/:id . is a variable value that  $routeParams is going to get.
             templateUrl: "views/style.htm"
         })
+
+
 
 
 
@@ -28,12 +30,12 @@ app.config(function($routeProvider) {
 
 
 //DECLARING A SERVICE 'Factory' to share data between controller and views
-app.factory("dataAccess", function($https){   //dataAccess is the name of the Factory and $http is a directive that is being injecting for get Json.
+app.factory("dataAccess", function($http){   //dataAccess is the name of the Factory and $http is a directive that is being injecting for get Json.
    return{    //Factory return an object
        apiData : function (){  //Inside the object, declare a function to return the call to Json file, data will come back in a 'Promise'...
-          return $https.get('https://cdn.contentful.com/spaces/pvdxttzvgb3d/entries?access_token=24069431a8de8798be8e2e778db2ab42ed42942b6dfca4bc3e5523bee336d1c7').then(function(response){  //response is a variable that will hold the promise, it has a value 'data'.
+          return $http.get('https://cdn.contentful.com/spaces/pvdxttzvgb3d/entries?access_token=24069431a8de8798be8e2e778db2ab42ed42942b6dfca4bc3e5523bee336d1c7').then(function(response){  //response is a variable that will hold the promise, it has a value 'data'.
               return response.data; //return response.data if the call to Json file is success.
-              console.log(response.data);
+
           });
         }
     };
@@ -49,6 +51,9 @@ app.controller('homeCtrl', function($scope, dataAccess, $q){
         dataAccess.apiData().then(function(info){
             $scope.projects = info.items; // Assigning the data to $scope.projects.
             $scope.image = info.includes; //Assigning to $scope.image
+
+            console.log($scope.image);
+
             return info.items;
         });
     });
@@ -56,17 +61,11 @@ app.controller('homeCtrl', function($scope, dataAccess, $q){
 });
 
 
-
-
 app.controller('projectCtrl', function($routeParams, $scope, dataAccess, $q){
-
-    console.log($routeParams);
     var id = $routeParams.id - 1; //Asign $routeParams content that is = project id - 1.
     // perform some asynchronous operation, resolve or reject the promise when appropriate.
     $q.all([dataAccess]).then(function(){
-
         dataAccess.apiData().then(function(info){
-
             $scope.project = info.items[id]; //info[id] is bringing the data from the single project that has been click it on.
             $scope.project.image = info.includes.Asset[id].fields.file.url;
             $scope.project.title = info.items[id].fields.title;
@@ -79,8 +78,11 @@ app.controller('projectCtrl', function($routeParams, $scope, dataAccess, $q){
 });
 
 
-// app.controller('educationCtrl', function($routeParams, $scope, $q){
-//
-//
-// });
+
+
+
+
+
+
+
 
