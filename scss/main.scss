@@ -41,7 +41,7 @@ footer {
 /* Header Section
  *******************************************/
 .navbarTogglerDemo01 a {
-  color: white;
+  color: #00EBFF;
 }
 
 .iconLogo{
@@ -51,7 +51,7 @@ footer {
 }
 .navbar-brand img {
   @include media-breakpoint-down(sm) {
-    width: 180px;
+    width: 65px;
   }
 }
 

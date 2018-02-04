@@ -18,7 +18,7 @@
     width: 136px;
     border-radius: 50%;
     float: right;
-    margin-top: 125px;
+    margin-top: 10px;
     @include media-breakpoint-down(md) {
       margin-top: 0;
     }
@@ -26,6 +26,8 @@
       height: 90px;
       width: 90px;
       float: left;
+      display: none;
+
     }
   }
 }

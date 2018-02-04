@@ -1905,7 +1905,7 @@ tbody.collapse.show {
   background: no-repeat center center;
   background-size: 100% 100%; }
   .navbar-toggler-icon .fa {
-    color: white;
+    color: #00EBFF;
     font-size: 32px; }
 
 @media (max-width: 767px) {
@@ -4188,7 +4188,8 @@ p:not(.about-title) {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-top: 30px; }
 
 @media (max-width: 991px) {
   .display-1 {
@@ -4229,7 +4230,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 136px;
     border-radius: 50%;
     float: right;
-    margin-top: 125px; }
+    margin-top: 10px; }
     @media (max-width: 1199px) {
       #about .avatar {
         margin-top: 0; } }
@@ -4237,7 +4238,8 @@ h1, h2, h3, h4, h5, h6 {
       #about .avatar {
         height: 90px;
         width: 90px;
-        float: left; } }
+        float: left;
+        display: none; } }
 
 .about-title {
   font-size: 20px;
@@ -4404,7 +4406,7 @@ footer {
 /* Header Section
  *******************************************/
 .navbarTogglerDemo01 a {
-  color: white; }
+  color: #00EBFF; }
 
 .iconLogo {
   margin-right: 25px;
@@ -4413,7 +4415,7 @@ footer {
 
 @media (max-width: 991px) {
   .navbar-brand img {
-    width: 180px; } }
+    width: 65px; } }
 
 .container.treehouse-badges:not(ng-show) ul {
   display: flex;
