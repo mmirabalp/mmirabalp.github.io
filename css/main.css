@@ -1884,7 +1884,8 @@ tbody.collapse.show {
 
 .navbar-collapse {
   flex-basis: 100%;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
