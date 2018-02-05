@@ -4249,6 +4249,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 33px;
   text-transform: uppercase; }
 
+.about-header {
+  margin-top: 20px; }
+
 .social-media-icons {
   list-style: none;
   padding-left: 0; }
