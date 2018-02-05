@@ -223,8 +223,8 @@ label {
   margin-bottom: .5rem; }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color; }
+  outline: 1px solid;
+  outline-color: #009ED9; }
 
 input,
 button,
@@ -1873,6 +1873,9 @@ tbody.collapse.show {
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0; }
+  .navbar-nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #009ED9; }
   .navbar-nav .dropdown-menu {
     position: static;
     float: none; }
@@ -4189,8 +4192,7 @@ p:not(.about-title) {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
-  font-weight: 300;
-  margin-top: 30px; }
+  font-weight: 300; }
 
 @media (max-width: 991px) {
   .display-1 {

@@ -6346,6 +6346,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   border: 0;
+
 }
 
 .sr-only-focusable:active, .sr-only-focusable:focus {

@@ -70,6 +70,14 @@
     padding-left: 0;
   }
 
+  a:hover {
+    //background-color: #009ED9;
+    text-decoration: underline;
+    text-decoration-color: #009ED9;
+
+    //color: black;
+  }
+
   .dropdown-menu {
     position: static;
     float: none;
