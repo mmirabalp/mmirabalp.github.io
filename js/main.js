@@ -48,7 +48,7 @@ app.controller('homeCtrl', function($scope, dataAccess, $q){
             $scope.projects = info.items; // Assigning the data to $scope.projects.
             $scope.image = info.includes; //Assigning to $scope.image
 
-            console.log($scope.image);
+            // console.log(info.includes.Asset[id].fields.file.url);
 
             return info.items;
         });
