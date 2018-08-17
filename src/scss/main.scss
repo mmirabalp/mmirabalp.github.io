@@ -1,0 +1,119 @@
+@import "bootstrap.scss";
+@import "home.scss";
+@import "project.scss";
+@import "education.scss";
+
+header {
+  height: 64px;
+}
+footer {
+ height: 96px;
+}
+
+#about,
+#dev-stack,
+#projects,
+#project,
+#contact {
+  padding: 100px 0;
+  @include media-breakpoint-down(md) {
+    padding: 40px 0;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
+
+  h2.section-title {
+    font-size: 44px;
+    margin-bottom: 60px;
+    @include media-breakpoint-down(sm) {
+      font-size: 26px;
+    }
+  }
+}
+
+.card {
+  border: 1px solid #f2f2f2;
+  transition: all 0.15s ease-in-out;
+}
+
+
+/* Header Section
+ *******************************************/
+.navbarTogglerDemo01 a {
+  color: #00EBFF;
+
+}
+
+.iconLogo{
+  margin-right: 25px;
+  height: 60px;
+  width: 60px;
+}
+.navbar-brand img {
+  @include media-breakpoint-down(sm) {
+    width: 65px;
+  }
+}
+
+
+
+
+.container.treehouse-badges:not(ng-show){
+  ul{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    li{
+      padding-right: 25px;
+    }
+  }
+
+}
+
+/* Contact Section
+ *******************************************/
+#contact {
+  p {
+    text-align: center;
+  }
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  textarea {
+    height: 140px;
+  }
+}
+
+
+
+
+/* Footer Section
+ *******************************************/
+
+footer {
+  padding: 20px;
+
+  .social-media-icons, p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
+}
+
+
+.treehouse-badges {
+  text-align: center;
+  h4 img {
+    height: 50px;
+  }
+}

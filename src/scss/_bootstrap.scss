@@ -1,0 +1,132 @@
+/***********************************
+ *
+ * Imports The Bootstrap Framework
+ *
+ ***********************************/
+
+@import "bootstrap/scss/bootstrap.scss";
+
+$dark: #2C2C36;
+$dark-base: #494B57;
+
+
+/* Utilities Variables
+ *******************************************/
+$shadow-default: 0 4px 20px 0 rgba(180,180,180,0.6), 0 2px 8px 0 rgba(50,50,50,0.3);
+$shadow-dark: 0 4px 20px 0 rgba(0,0,0,0.6);
+$gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
+
+
+
+
+/* Button default styles
+ *******************************************/
+.btn {
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+.btn:not(.btn-lg),
+.btn:not(.btn-sm) {
+  font-size: 1rem;
+}
+
+.btn:hover {
+  box-shadow: $shadow-default;
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+  background: $gradient;
+}
+
+.round { // make buttons rounded
+  border-radius: 100px;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+
+  .btn {
+    margin-right: 16px;
+  }
+}
+
+
+/* Dark styles
+ *******************************************/
+.dark {
+  background: linear-gradient(315deg, $dark 0%, $dark-base 100%);
+
+  .btn:hover {
+    box-shadow: $shadow-dark;
+  }
+}
+
+.dark {
+  h1, h2, h3, h4, h5, h6, p, li, a {
+    color: #FFFFFF;
+  }
+}
+
+p:not(.about-title) {
+  opacity: 0.5;
+}
+
+.bg-grey {
+  background-color: #F8F9F9;
+}
+
+/* Typography
+ *******************************************/
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+
+}
+
+@include media-breakpoint-down(sm) {
+  .display-1 {
+    font-size: 2.6rem;
+  }
+  .display-2 {
+    font-size: 2.4rem;
+  }
+  .display-3 {
+    font-size: 2.2rem;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+
+
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+}
+
+
+
+

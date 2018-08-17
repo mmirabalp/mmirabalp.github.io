@@ -1,0 +1,147 @@
+
+<!-- ABOUT SECTION
+ *********************************** -->
+    <section id="about" class="jumbotron jumbotron-fluid dark hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-lg-3">
+                    <img src="../images/mawel-mirabal-avatar.png" alt="..." class="avatar">
+                </div>
+
+                <div class="col-md-8 col-lg-7">
+                    <h1 class="display-4 about-header">Web Developer For Hire</h1>
+                    <p class="about-title">Mawel Mirabal</p>
+                    <p>I'm an ITT Technical Institute graduate and a web developer, I
+                        love computer programming and anything that
+                        challenges my mind. My purpose is to specialize in back end development and have an understanding of front end development. I am very analytical and deep thinker.</p>
+                    <ul class="social-media-icons">
+                        <li><a href="https://github.com/mmirabalp"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://teamtreehouse.com/mawelmirabal"><i class="fa fa-code-fork" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.freecodecamp.org/mmirabalp"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+                        <li><a href="https://codepen.io/mmirabalp/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mawel-mirabal-b63b9b4b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <div class="hero-buttons">
+                        <!-- <a class="btn btn-outline-primary round" href="#" role="button">My Resume</a> -->
+                        <a class="btn btn-primary round" href="#contactMe" role="button">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ABOUT SECTION
+ *********************************** -->
+
+
+
+
+<!-- DEV STACK SECTION
+ *********************************** -->
+    <section id="dev-stack">
+        <div class="container">
+
+            <h2 class="section-title text-center">My Web Development Stack</h2>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 web-dev-stack">
+                    <div class="web-dev-stack-container">
+                        <ul class="dev-stack-icons">
+                            <li><img src="../images/icon-html.svg" alt=""></li>
+                            <li><img src="../images/icon-css.svg" alt=""></li>
+                            <li><img src="../images/icon-js.svg" alt=""></li>
+                            <li><img src="../images/icon-php.svg" alt=""></li>
+                            <li><img src="../images/icon-sql.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- DEV STACK SECTION
+********************* -->
+
+
+
+
+<!-- PROJECTS SECTION
+ *********************************** -->
+    <section id="projects" class="bg-grey">
+        <div class="container">
+
+            <h2 class="section-title text-center">List Of My Recent Projects</h2>
+
+            <div class="row" ng-repeat="project in projects">
+                <a class="card project-container col-12" href="#!/project/{{$a=$index + 1}}">
+           <!-- ng-while="$a < projects.length" -->
+
+                    <div class="project-thumbnail" ng-while="$a < projects.length" style="background-image: url(http://{{image.Asset[$a-1].fields.file.url}});">
+                      <!-- <img class="img-fluid" src="http://{{image.Asset[$index].fields.file.url}}"
+                             alt="{{project.fields.title}} image"> -->
+
+                             <!-- <img src="{{projects.fields.image.fields.file.url}}">  -->
+
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="title">{{project.fields.title}}</h3>
+                        <p>Technologies</p>
+
+                        <ul class="tech-list">
+                            <li class="tech" ng-repeat="projects in project.fields.technologies">{{projects}} </li>
+                        </ul>
+
+                    </div>
+</a>
+
+            </div>
+        </div>
+    </section>
+<!-- PROJECT SECTION
+********************* -->
+
+
+
+
+<!-- CONTACT SECTION
+   ********************* -->
+<section id="contact" class="dark">
+    <div class="container" id="contactMe">
+        <h2 class="section-title text-center">Let's Talk</h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-5">
+                <p class=''>If you have any questions or have open opportunities,
+                    feel free to send me a message here.</p>
+
+                <form action='https://formspree.io/mmirabalp@gmail.com' class='contactForm'
+                      id='contact_form' method='POST'>
+
+                    <input name='email' placeholder='Email'
+                           required type='email'>
+
+
+                    <input name='text' placeholder='Name'
+                           required
+                           type='text'>
+
+
+                    <textarea class='input inputMessage' name='body'
+                              placeholder='Message'
+                              required></textarea>
+
+                    <button class='btn btn-primary btn-block round' type='submit'>Submit</button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- CONTACT SECTION
+********************* -->
+
+
+
+<script src="..js/main.js"></script>
+
