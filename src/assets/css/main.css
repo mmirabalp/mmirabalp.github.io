@@ -4192,7 +4192,8 @@ p:not(.about-title) {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-top: 60px; }
 
 @media (max-width: 991px) {
   .display-1 {
@@ -4299,6 +4300,9 @@ h1, h2, h3, h4, h5, h6 {
     .project-container:hover:after {
       transition: opacity .15s ease-in-out;
       opacity: 0.1; }
+      @media (max-width: 1199px) {
+        .project-container:hover:after {
+          display: none; } }
   .project-container:after {
     content: "\f105";
     font-family: "fontawesome";
@@ -4309,7 +4313,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     top: 25%;
     right: 10px;
-    position: relative;
+    position: absolute;
     transition: opacity .15s ease-in-out; }
   .project-container .project-thumbnail,
   .project-container .project-info {
@@ -4331,7 +4335,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 0px 10px 10px; }
     .project-container .project-info .title {
       color: #2C2C36;
-      margin-bottom: 30px; }
+      margin-top: 0px; }
     .project-container .project-info p {
       color: #08131F;
       margin: 10px 0; }
@@ -4396,7 +4400,8 @@ footer {
   #project h2.section-title,
   #contact h2.section-title {
     font-size: 44px;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    margin-top: 80px; }
     @media (max-width: 991px) {
       #about h2.section-title,
       #dev-stack h2.section-title,
@@ -4460,3 +4465,9 @@ footer {
   text-align: center; }
   .treehouse-badges h4 img {
     height: 50px; }
+
+.block {
+  display: block; }
+
+.inline {
+  display: inline; }

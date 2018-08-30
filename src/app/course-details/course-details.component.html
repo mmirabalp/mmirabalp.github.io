@@ -1,39 +1,38 @@
 <section id="project">
   <div class="container">
-    <div *ngIf="course.fields">
+    <div *ngIf="course">
       <h1 class="section-title text-center">{{course.fields.title}}</h1>
       <div class="row">
-        <div class="col-xl-9 col-lg-8 col-md-12">
+        <div class="col-xl-8 col-lg-7 col-md-12">
           <a href="{{course.fields.url}}" target="_blank">
-            <img src="{{course.fields.courseImage.fields.file.url}}" style="width : 100% !important; margin: 10px" class="img-fluid"
-            />
+            <img src="{{course.fields.courseImage.fields.file.url}}" class="img-fluid"/>
           </a>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-12">
-          <div class="project-info">
-            <h2 class="title">
-              {{course.fields.title}}
-            </h2>
-            <div [innerHTML]="course.fields.longDescription | mdToHtml"></div>
-            <h4>
-              <br>
-              <p>Technologies</p>
-            </h4>
-            <ul class="tech-list">
-              <li>
-                <p><li *ngFor="let x of course.fields.author; let i=index;">
-                      {{course.fields.author[i]}}&nbsp;
-                    </li></p>
-              </li>
-            </ul>
+          <div class="card project-details">
+            <div class="project-info">
+              <h2 class="title">
+                {{course.fields.title}}
+              </h2>
+              <div [innerHTML]="course.fields.longDescription | mdToHtml"></div>
+              <h4>
+                <br>
+                <p>Technologies</p>
+              </h4>
+              <ul class="tech-list">
+                <li>
+                  <p><li *ngFor="let x of course.fields.author; let i=index;">
+                        {{course.fields.author[i]}}&nbsp;
+                      </li></p>
+                </li>
+              </ul>
+            </div>
+            <a href="{{course.fields.url}}" target="_blank" class="btn">See Project Online</a>
+            <a (click)="goToList()" target="_blank" class="btn btn-outline-secondary">Back to List</a>
+            <!-- <button (click)="goToList()" class="btn btn-outline-tercary">Back To List</button> -->
           </div>
-
         </div>
       </div>
-
-
-      <a href="{{course.fields.url}}" target="_blank" class="btn btn-success">See Project Online</a>
-      <button (click)="goToList()" class="btn btn-danger">Back To List</button>
 
     </div>
   </div>

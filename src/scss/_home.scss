@@ -116,6 +116,9 @@
     &:after {
       transition: opacity .15s ease-in-out;
       opacity: 0.1;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
   }
 
@@ -130,7 +133,7 @@
     display: block;
     top: 25%;
     right: 10px;
-    position: relative;
+    position: absolute;
     transition: opacity .15s ease-in-out;
   }
 
@@ -162,7 +165,7 @@
     padding: 10px 0px 10px 10px;
     .title {
       color: #2C2C36;
-      margin-bottom: 30px;
+      margin-top: 0px;
     }
     p {
       color: #08131F;
@@ -186,7 +189,6 @@
         padding: 0 10px;
         text-transform: lowercase;
       }
-
     }
 
     .link {
@@ -209,17 +211,5 @@
 
 
 
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
