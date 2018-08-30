@@ -156,12 +156,12 @@ sup {
 
 a {
   color: #1B9CD7;
-  text-decoration: none;
+  text-decoration:underline;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
     color: #126b93;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -4471,3 +4471,6 @@ footer {
 
 .inline {
   display: inline; }
+
+.collapse .navbar-nav .nav-item a .nav-link {
+  text-decoration: underline; }
