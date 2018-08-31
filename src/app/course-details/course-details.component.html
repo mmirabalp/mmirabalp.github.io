@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-xl-8 col-lg-7 col-md-12">
           <a href="{{course.fields.url}}" target="_blank">
-            <img src="{{course.fields.courseImage.fields.file.url}}" class="img-fluid"/>
+            <img src="{{course.fields.courseImage.fields.file.url}}" class="img-fluid card project-container"/>
           </a>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-12">
@@ -29,7 +29,6 @@
             </div>
             <a href="{{course.fields.url}}" target="_blank" class="btn">See Project Online</a>
             <a (click)="goToList()" target="_blank" class="btn btn-outline-secondary">Back to List</a>
-            <!-- <button (click)="goToList()" class="btn btn-outline-tercary">Back To List</button> -->
           </div>
         </div>
       </div>
@@ -37,71 +36,3 @@
     </div>
   </div>
 </section>
-
-
-
-
-<!-- <div *ngIf="course.fields">
-  <a href="{{course.fields.url}}" target="_blank">
-    <img src="{{course.fields.courseImage.fields.file.url}}" alt="" width="40%" style="margin: 10px" class="float-right rounded"
-    />
-  </a>
-
-  <h2>
-    <a href="{{course.fields.url}}" target="_blank">{{course.fields.title}}</a>
-  </h2>
-
-  <i>by {{course.fields.author}}</i>
-
-  <br>
-  <br>
-
-  <div [innerHTML]="course.fields.description | mdToHtml"></div>
-  <div [innerHTML]="course.fields.longDescription | mdToHtml"></div> -->
-<!-- <div>{{course.fields.description}}</div> -->
-<!-- <div>{{course.fields.longDescription}}</div> -->
-<!-- <a href="{{course.fields.url}}" target="_blank" class="btn btn-success">Go To Courses</a>
-  <button (click)="goToList()" class="btn btn-danger">Back To List</button>
-
-</div> -->
-
-
-
-<!-- PROJECT PAGE
-********************************************************* -->
-
-<!-- <section id="project">
-    <div class="container">
-
-        <h1 class="section-title text-center">{{project.title}}</h1>
-
-        <div class="row">
-
-            <div class="col-xl-9 col-lg-8 col-md-12">
-                <img src = {{project.image}} alt="" class="img-fluid">
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-12">
-                <div class="card project-details">
-
-
-                    <h4>Project Description</h4>
-                    <p>{{project.description}}</p>
-
-
-
-                    <h4>Technologies / Tools</h4>
-                    <ul>
-                        <li ng-repeat="technology in project.technologies">{{technology}}</li>
-                    </ul>
-
-
-                    <span>Url: <a href="{{project.url}}">{{project.url}}</a></span>
-                </div>
-
-            </div>
-
-
-        </div>
-    </div>
-</section> -->

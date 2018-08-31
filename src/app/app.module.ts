@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {path: '', component: AboutComponent, pathMatch: 'full'},
@@ -39,6 +40,7 @@ const routes: Routes = [
     ContactComponent,
     AboutComponent,
     NavbarComponent,
+    FooterComponent,
 
   ],
   imports: [

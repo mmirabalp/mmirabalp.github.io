@@ -156,12 +156,12 @@ sup {
 
 a {
   color: #1B9CD7;
-  text-decoration:underline;
+  text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
     color: #126b93;
-    text-decoration: none; }
+    text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -4346,7 +4346,7 @@ h1, h2, h3, h4, h5, h6 {
       .project-container .project-info .tech-list .tech {
         border: 1px solid #1B9CD7;
         color: #1B9CD7;
-        height: 28px;
+        height: 36px;
         border-radius: 4px;
         display: inline-flex;
         align-items: center;
@@ -4364,6 +4364,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Single Project View
  *******************************************/
+.img-fluid {
+  min-width: 100%; }
+
 .project-details {
   box-shadow: 0 4px 20px 0 rgba(180, 180, 180, 0.6), 0 2px 8px 0 rgba(50, 50, 50, 0.3);
   padding: 10px; }
@@ -4472,5 +4475,5 @@ footer {
 .inline {
   display: inline; }
 
-.collapse .navbar-nav .nav-item a .nav-link {
+a.nav-link {
   text-decoration: underline; }
