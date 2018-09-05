@@ -1,2 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'assets/css/main.css';
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
