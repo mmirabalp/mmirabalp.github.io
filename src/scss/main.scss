@@ -36,6 +36,9 @@ footer {
 .card {
   border: 1px solid #f2f2f2;
   transition: all 0.15s ease-in-out;
+  @include media-breakpoint-down(sm) {
+    padding: 0px;
+  }
 }
 
 

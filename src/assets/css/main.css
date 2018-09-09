@@ -4340,7 +4340,7 @@ h1, h2, h3, h4, h5, h6 {
       color: #08131F;
       margin: 10px 0; }
     .project-container .project-info .tech-list {
-      display: inline-flex;
+      display: inline-block;
       list-style: none;
       padding-left: 0; }
       .project-container .project-info .tech-list .tech {
@@ -4348,7 +4348,7 @@ h1, h2, h3, h4, h5, h6 {
         color: #1B9CD7;
         height: 36px;
         border-radius: 4px;
-        display: inline-flex;
+        display: inline-block;
         align-items: center;
         margin-right: 14px;
         font-size: 14px;
@@ -4416,6 +4416,9 @@ footer {
 .card {
   border: 1px solid #f2f2f2;
   transition: all 0.15s ease-in-out; }
+  @media (max-width: 991px) {
+    .card {
+      padding: 0px; } }
 
 /* Header Section
  *******************************************/
