@@ -11,9 +11,9 @@
                 <div class="col-md-8 col-lg-7">
                     <h1 class="display-4 about-header">Web Developer For Hire</h1>
                     <p class="about-title">Mawel Mirabal</p>
-                    <p>I'm an ITT Technical Institute graduate and a web developer, I
-                        love computer programming and anything that
-                        challenges my mind. My purpose is to specialize in back end development and have an understanding of front end development. I am very analytical and deep thinker.</p>
+                    <p>Hi, my name is Mawel. I’m a front-end developer looking for a team that allows me to get outside my comfort zone.The
+                    MERN stack, React and Javascript are where I’ve spent most of my time learning, but I’m always excited to learn new
+                    technologies!</p>
                     <ul class="social-media-icons">
                         <li><a href="https://github.com/mmirabalp"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                         <li><a href="https://teamtreehouse.com/mawelmirabal"><i class="fa fa-code-fork" aria-hidden="true"></i></a></li>
@@ -71,14 +71,15 @@
             <h2 class="section-title text-center">List Of My Recent Projects</h2>
 
             <div class="row" ng-repeat="project in projects">
-                <a class="card project-container col-12"
-                   
-                   href="#!/project/{{$a=$index + 1}}"> 
+                <a class="card project-container col-12" href="#!/project/{{$a=$index + 1}}">
            <!-- ng-while="$a < projects.length" -->
 
-                    <div class="project-thumbnail" ng-while="$a < projects.length" style="background-image: url(http://{{image.Asset[$a -1].fields.file.url}});">
-                        <!--<img class="img-fluid" src="http://{{image.Asset[$index].fields.file.url}}"-->
-                             <!--alt="{{project.fields.title}} image">-->
+                    <div class="project-thumbnail" ng-while="$a < projects.length" style="background-image: url(http://{{image.Asset[$a-1].fields.file.url}});">
+                      <!-- <img class="img-fluid" src="http://{{image.Asset[$index].fields.file.url}}"
+                             alt="{{project.fields.title}} image"> -->
+
+                             <!-- <img src="{{projects.fields.image.fields.file.url}}">  -->
+
                     </div>
 
                     <div class="project-info">
@@ -91,7 +92,7 @@
 
                     </div>
 </a>
-               
+
             </div>
         </div>
     </section>
