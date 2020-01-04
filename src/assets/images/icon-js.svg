@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="99px" height="119px" viewBox="0 0 99 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>.icon-js</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Home" transform="translate(-662.000000, -999.000000)" stroke="#1CB1F5" stroke-width="3">
+            <g id="section.hero-secondary" transform="translate(0.000000, 801.000000)">
+                <g id="ul.file-icons" transform="translate(254.000000, 200.000000)">
+                    <g id=".icon-js" transform="translate(410.000000, 0.000000)">
+                        <path d="M53.8308333,83.575875 C54.034125,87.0070417 56.7066667,89.7291667 59.9791667,89.7291667 C63.3805833,89.7291667 66.1275,86.7839167 66.1275,83.1544167 C66.1275,77.7994167 61.0501667,77.64075 59.9742083,77.3333333 C58.89825,77.016 53.8209167,76.8573333 53.8209167,71.5072917 C53.8209167,67.88275 56.5827083,64.9375 59.9791667,64.9375 C63.24175,64.9375 65.9142917,67.659625 66.1175833,71.0858333" id="Shape"></path>
+                        <polygon id="Shape" points="94.6875 114.520833 0.479166667 114.520833 0.479166667 0.479166667 64.9375 0.479166667 94.6875 30.2291667"></polygon>
+                        <polyline id="Shape" points="64.9375 0.479166667 64.9375 30.2291667 94.6875 30.2291667"></polyline>
+                        <path d="M25.2708333,82.2916667 C25.2708333,86.3971667 28.6028333,89.7291667 32.7083333,89.7291667 C36.8138333,89.7291667 40.1458333,86.3971667 40.1458333,82.2916667 L40.1458333,64.9375" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
