@@ -27,7 +27,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server . -- run-p watch",
+    "start": "run-p watch & http-server .",
     "sass": "node-sass $npm_package_config_srcPath --output $npm_package_config_assetsPath",
     "watch": "onchange $npm_package_config_changePath -- run-s sass"
 
