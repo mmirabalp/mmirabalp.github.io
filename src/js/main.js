@@ -69,6 +69,9 @@ app.controller('projectCtrl', function($routeParams, $scope, dataAccess, $q){
             $scope.project.technologies = info.items[id].fields.technologies;
             $scope.project.url = info.items[id].fields.url;
 
+            console.log(info);
+            
+
         });
     });
 });
