@@ -5,15 +5,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-lg-3">
-                    <img src="../images/mawel-mirabal-avatar.png" alt="..." class="avatar">
+                    <img src="../src/assets/images/mawel-mirabal-avatar.png" alt="..." class="avatar">
                 </div>
 
                 <div class="col-md-8 col-lg-7">
                     <h1 class="display-4 about-header">Web Developer For Hire</h1>
                     <p class="about-title">Mawel Mirabal</p>
-                    <p>Hi, my name is Mawel. I’m a front-end developer looking for a team that allows me to get outside my comfort zone.The
-                    MERN stack, React and Javascript are where I’ve spent most of my time learning, but I’m always excited to learn new
-                    technologies!</p>
+                    <p>Hi, my name is Mawel. I am a front-end developer looking for a team that allows me to get outside my comfort zone.The
+                    MERN stack, React and Javascript are where I have spent most of my time learning, but I am always excited to learn new
+                    technologies.</p>
                     <ul class="social-media-icons">
                         <li><a href="https://github.com/mmirabalp"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                         <li><a href="https://teamtreehouse.com/mawelmirabal"><i class="fa fa-code-fork" aria-hidden="true"></i></a></li>
@@ -46,11 +46,11 @@
                 <div class="col-sm-12 col-md-12 web-dev-stack">
                     <div class="web-dev-stack-container">
                         <ul class="dev-stack-icons">
-                            <li><img src="../images/icon-html.svg" alt=""></li>
-                            <li><img src="../images/icon-css.svg" alt=""></li>
-                            <li><img src="../images/icon-js.svg" alt=""></li>
-                            <li><img src="../images/icon-php.svg" alt=""></li>
-                            <li><img src="../images/icon-sql.svg" alt=""></li>
+                            <li><img src="../src/assets/images/icon-html.svg" alt=""></li>
+                            <li><img src="../src/assets/images/icon-css.svg" alt=""></li>
+                            <li><img src="../src/assets/images/icon-js.svg" alt=""></li>
+                            <li><img src="../src/assets/images/icon-php.svg" alt=""></li>
+                            <li><img src="../src/assets/images/icon-sql.svg" alt=""></li>
                         </ul>
                     </div>
                 </div>
@@ -74,12 +74,10 @@
                 <a class="card project-container col-12" href="#!/project/{{$a=$index + 1}}">
            <!-- ng-while="$a < projects.length" -->
 
-                    <div class="project-thumbnail" ng-while="$a < projects.length" style="background-image: url(http://{{image.Asset[$a-1].fields.file.url}});">
-                      <!-- <img class="img-fluid" src="http://{{image.Asset[$index].fields.file.url}}"
-                             alt="{{project.fields.title}} image"> -->
-
+                    <div class="project-thumbnail" ng-while="$a < projects.length" style="background-image: url(http://{{image.Asset[$a-1].fields.file.url}});">     
+                        <!-- <img class="img-fluid" src="http://{{image.Asset[$index].fields.file.url}}" -->
+                             <!-- alt="{{project.fields.title}} image">  -->
                              <!-- <img src="{{projects.fields.image.fields.file.url}}">  -->
-
                     </div>
 
                     <div class="project-info">
@@ -143,5 +141,5 @@
 
 
 
-<script src="..js/main.js"></script>
+<script src="../js/main.js"></script>
 

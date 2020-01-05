@@ -7,11 +7,11 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
         .when("/", {   //(when) is a method inside $routeProvider directive
-            templateUrl: "views/home.htm",   //templateUrl contain the browser route as it is there...
+            templateUrl: "/views/home.htm",   //templateUrl contain the browser route as it is there...
             controller: "homeCtrl"   //Declaring de controller that is going to control this view: "views/home.htm" when the user go to that route in browser
         })
         .when("/project/:id", { //'_______'/:id . is a variable value that  $routeParams is going to get.
-            templateUrl: "views/project.htm",
+            templateUrl: "/views/project.htm",
             controller: "projectCtrl"
         })
         .when("/style", { //'_______'/:id . is a variable value that  $routeParams is going to get.
@@ -68,6 +68,9 @@ app.controller('projectCtrl', function($routeParams, $scope, dataAccess, $q){
             $scope.project.description = info.items[id].fields.description;
             $scope.project.technologies = info.items[id].fields.technologies;
             $scope.project.url = info.items[id].fields.url;
+
+            console.log(info);
+            
 
         });
     });
