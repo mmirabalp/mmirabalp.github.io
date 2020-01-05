@@ -6,22 +6,19 @@ var app = angular.module("myApp", ["ngRoute"]);
 //$routeProvider is a directive inside ngRoute module
 app.config(function($routeProvider) {
     $routeProvider
-      .when("/", {
-        //(when) is a method inside $routeProvider directive
-        templateUrl: "../views/home.htm", //templateUrl contain the browser route as it is there...
-        controller: "homeCtrl" //Declaring de controller that is going to control this view: "views/home.htm" when the user go to that route in browser
-      })
-      .when("/project/:id", {
-        //'_______'/:id . is a variable value that  $routeParams is going to get.
-        templateUrl: "../views/project.htm",
-        controller: "projectCtrl"
-      })
-      .when("/style", {
-        //'_______'/:id . is a variable value that  $routeParams is going to get.
-        templateUrl: "../views/style.htm"
-      })
+        .when("/", {   //(when) is a method inside $routeProvider directive
+            templateUrl: "/views/home.htm",   //templateUrl contain the browser route as it is there...
+            controller: "homeCtrl"   //Declaring de controller that is going to control this view: "views/home.htm" when the user go to that route in browser
+        })
+        .when("/project/:id", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "/views/project.htm",
+            controller: "projectCtrl"
+        })
+        .when("/style", { //'_______'/:id . is a variable value that  $routeParams is going to get.
+            templateUrl: "views/style.htm"
+        })
 
-      .otherwise("/");   //Default route that goes to HOME.
+        .otherwise("/");   //Default route that goes to HOME.
 
 });
 
