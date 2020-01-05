@@ -27,8 +27,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server .",
-    "compile:sass": "node-sass $npm_package_config_srcPath --output $npm_package_config_assetsPath --source-map-embed --output-style-compressed"
+    "start": "http-server . -- run-p watch",
+    "sass": "node-sass $npm_package_config_srcPath --output $npm_package_config_assetsPath",
+    "watch": "onchange $npm_package_config_changePath -- run-s sass"
 
   },
   "author": "Mawel Mirabal",
