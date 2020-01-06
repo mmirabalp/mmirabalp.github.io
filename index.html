@@ -1,98 +1,79 @@
 <!DOCTYPE html>
 <!--ng-app="myApp" is the declaration of ANGULAR app with the name of 'myApp' on the index view-->
 <html lang="en" ng-app="myApp">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="src/assets/images/custom-coding.gif" type="image/png" sizes="50x50">
-    <title>Mawel's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans" rel="stylesheet">
-    <!--<link rel="stylesheet" href="css/vendor/font-awesome.min.css">-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/assets/css/main.css">
-    <meta content='Mawel' name='description'>
-    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-    
-</head>
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge" name="viewport" content="width=device-width, initial-scale=1" content='Mawel' name='description'>
+        <link rel="icon" href="src/assets/images/custom-coding.gif" type="image/png" sizes="50x50">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans" rel="stylesheet">
+        <!--<link rel="stylesheet" href="css/vendor/font-awesome.min.css">-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="src/assets/css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+        <title>Mawel's Portfolio</title>
+    </head>
 
-<body class="body">
-    <!-- NAVIGATION SECTION
-    *********************** -->
-    <header class="navigation dark">
-        <nav class="navbar navbar-expand-lg justify-content-end fixed-top navigation dark" role="navigation">
-            <div class="container-fluid">
-
-                <a class="navbar-brand mr-auto mt-2 mt-lg-0" href="#about">
-                    <!--<img src="images/MawelMirabal-logo.png" alt="Mawel Mirabal Logo">-->
-                    <!--<i class="fab fa-monero fa-2x"></i>-->
-                    <img src="src/assets/images/custom-coding.svg" class="iconLogo">
-                </a>
-
-                <button id="menu" class="navbar-toggler" type="button" data-toggle="collapse"
-                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fa fa-bars fa-1x" aria-hidden="true"></i>
-                    </span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#dev-stack">Dev Stack</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-
-                    </ul>
-
-                    <a class="btn btn-outline-primary round" href="#contactMe">Contact</a>
-
+    <body class="body">
+        <!-- *** NAVIGATION SECTION *** -->
+        <header class="navigation dark">
+            <nav class="navbar navbar-expand-lg justify-content-end fixed-top navigation dark" role="navigation">
+                <div class="container-fluid">
+                    <a class="navbar-brand mr-auto mt-2 mt-lg-0" href="#about">
+                        <img src="src/assets/images/custom-coding.svg" class="iconLogo">
+                    </a>
+                    <button id="menu" class="navbar-toggler" type="button" data-toggle="collapse"
+                            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fa fa-bars fa-1x" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#dev-stack">Dev Stack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-outline-primary round" href="#contactMe">Contact</a>
+                    </div>
                 </div>
+            </nav>
+        </header>
+        <!-- *** NAVIGATION SECTION *** -->
+        
+
+        
+        <!-- *** ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE ***-->
+        <ng-view></ng-view>
+        <!-- *** ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE ***-->
+
+        <!-- *** FOOTER SECTION ***-->
+        <footer class="dark">
+            <ul class="social-media-icons">
+                <li><a href="https://github.com/mmirabalp"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://teamtreehouse.com/mawelmirabal"><i class="fa fa-code-fork" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.freecodecamp.org/mmirabalp"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+                <li><a href="https://codepen.io/mmirabalp/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mawel-mirabal-b63b9b4b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>© 2016 by Mawel Mirabal.</p>
+        </footer>
+        <!-- *** FOOTER SECTION ***-->
 
 
-            </div>
-        </nav>
-    </header>
+        <!--SCRIPTS-->
+        <!--*****************************************************-->
+        <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+        <script src="src/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="src/js/vendor/bootstrap.js"></script>
+        <script src="src/js/navigation.js"></script>
+        <script src="src/js/main.js"></script>
+        <!--*****************************************************-->
 
-
-
-
-
-
-<div class-"wrap">
-    <!-- ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE INSIDE
-    ********************************************************* -->
-    <ng-view></ng-view>
-</div>
-
-    <footer class="dark">
-        <ul class="social-media-icons">
-            <li><a href="https://github.com/mmirabalp"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="https://teamtreehouse.com/mawelmirabal"><i class="fa fa-code-fork" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.freecodecamp.org/mmirabalp"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
-            <li><a href="https://codepen.io/mmirabalp/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/mawel-mirabal-b63b9b4b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        </ul>
-        <p>© 2016 Company, Inc.</p>
-    </footer>
-
-
-    <!-- SCRIPTS
-    ********************* -->
-
-    <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
-    <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
-    <script src="src/js/vendor/jquery-1.12.0.min.js"></script>
-    <script src="src/js/vendor/bootstrap.js"></script>
-    <script src="src/js/navigation.js"></script>
-
-    <script src="src/js/main.js"></script>
-
-</body>
+    </body>
 </html>

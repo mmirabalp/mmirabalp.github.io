@@ -1,48 +1,47 @@
-<<<<<<< HEAD
 node_modules/*
 .idea/*
-=======
-# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
-/dist
-/dist-server
-/tmp
-/out-tsc
 
-# dependencies
-/node_modules
+# # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# # compiled output
+# /dist
+# /dist-server
+# /tmp
+# /out-tsc
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# # dependencies
+# /node_modules
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
+# # IDEs and editors
+# /.idea
+# .project
+# .classpath
+# .c9/
+# *.launch
+# .settings/
+# *.sublime-workspace
 
-# e2e
-/e2e/*.js
-/e2e/*.map
+# # IDE - VSCode
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
 
-# System Files
-.DS_Store
-Thumbs.db
->>>>>>> 1c869c61ce035046e6e812210a29cbb64416cd5d
+# # misc
+# /.sass-cache
+# /connect.lock
+# /coverage
+# /libpeerconnection.log
+# npm-debug.log
+# testem.log
+# /typings
+
+# # e2e
+# /e2e/*.js
+# /e2e/*.map
+
+# # System Files
+# .DS_Store
+# Thumbs.db

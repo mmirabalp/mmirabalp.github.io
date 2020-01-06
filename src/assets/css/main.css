@@ -4293,7 +4293,6 @@ h1, h2, h3, h4, h5, h6 {
  *******************************************/
 .project-container {
   background-color: white;
-  margin-bottom: 30px;
   display: inline; }
   .project-container:hover {
     box-shadow: 0 4px 20px 0 rgba(180, 180, 180, 0.6), 0 2px 8px 0 rgba(50, 50, 50, 0.3); }
