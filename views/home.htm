@@ -70,13 +70,14 @@
 
             <h2 class="section-title text-center">List Of My Recent Projects</h2>
 
-            <div class="row" ng-repeat="project in projects">
-                <a class="card project-container col-12" href="#!/project/{{$a=$index + 1}}">
+            <div class="col-12" ng-repeat="project in projects">
+                <div class="row">
+                <a class="card project-container" href="#!/project/{{$a=$index + 1}}">
            <!-- ng-while="$a < projects.length" -->
 
-                    <div class="project-thumbnail" ng-while="$a < projects.length" style="background-image: url(http://{{image.Asset[$a-1].fields.file.url}});">     
-                        <!-- <img class="img-fluid" src="http://{{image.Asset[$index].fields.file.url}}" -->
-                             <!-- alt="{{project.fields.title}} image">  -->
+                    <div class="project-thumbnail" ng-while="$a < projects.length">     
+                      
+                        <img class="img-fluid" src="http://{{image.Asset[$index].fields.file.url}}" alt="{{project.fields.title}} image" / >
                              <!-- <img src="{{projects.fields.image.fields.file.url}}">  -->
                     </div>
 
@@ -89,7 +90,8 @@
                         </ul>
 
                     </div>
-</a>
+                </a>
+            </div>
 
             </div>
         </div>
