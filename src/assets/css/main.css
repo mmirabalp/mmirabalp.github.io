@@ -2111,6 +2111,7 @@ tbody.collapse.show {
   color: rgba(255, 255, 255, 0.5); }
 
 .card {
+  margin-bottom: 6px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2119,7 +2120,7 @@ tbody.collapse.show {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+  border-radius: .35rem; }
 
 .card-body {
   flex: 1 1 auto;
@@ -4228,7 +4229,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 80px; }
     @media (max-width: 991px) {
       #about .row {
-        margin: 0; } }
+        margin: 50px; } }
   #about .avatar {
     height: 136px;
     width: 136px;
@@ -4257,8 +4258,8 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
   padding-left: 0; }
   .social-media-icons li {
-    height: 36px;
-    width: 36px;
+    height: 40px;
+    width: 40px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: inline-flex;
@@ -4281,7 +4282,7 @@ h1, h2, h3, h4, h5, h6 {
       .dev-stack-icons li {
         margin: 0; }
         .dev-stack-icons li img {
-          height: 50px; } }
+          height: 80px; } }
 
 /* DEV STACK SECTION
  *******************************************/
@@ -4392,7 +4393,7 @@ footer {
     #projects,
     #project,
     #contact {
-      padding: 20px 0; } }
+      padding: 60px 0; } }
   #about h2.section-title,
   #dev-stack h2.section-title,
   #projects h2.section-title,
@@ -4414,7 +4415,8 @@ footer {
   transition: all 0.15s ease-in-out; }
   @media (max-width: 991px) {
     .card {
-      padding: 0px; } }
+      padding: 10px; 
+    } }
 
 /* Header Section
  *******************************************/
