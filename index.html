@@ -26,7 +26,7 @@
                     <button id="menu" class="navbar-toggler" type="button" data-toggle="collapse"
                             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                            <i class="fa fa-bars fa-1x" aria-hidden="true"></i>
+                            <i id="menu-icon" class="fa fa-bars fa-1x" aria-hidden="true"></i>
                         </span>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -35,13 +35,20 @@
                                 <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#dev-stack">Dev Stack</a>
+                                <a class="nav-link" href="#dev-stack">Tools</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#projects">Projects</a>
                             </li>
+                            
+                            <li class="nav-item d-lg-none">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            
                         </ul>
-                        <a class="btn btn-outline-primary round" href="#contact">Contact</a>
+                        
+                        <a class="btn btn-outline-primary round ml-3 d-none d-lg-block" href="#contact">Contact</a>
+                        
                     </div>
                 </div>
             </nav>

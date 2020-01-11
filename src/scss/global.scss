@@ -1,0 +1,263 @@
+$dark: #2C2C36;
+$dark-base: #494B57;
+
+
+/* Utilities Variables
+ *******************************************/
+$shadow-default: 0 4px 20px 0 rgba(180,180,180,0.6), 0 2px 8px 0 rgba(50,50,50,0.3);
+$shadow-dark: 0 4px 20px 0 rgba(0,0,0,0.6);
+$gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
+
+
+
+
+/* Button default styles
+ *******************************************/
+.btn {
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+.btn:not(.btn-lg),
+.btn:not(.btn-sm) {
+  font-size: 1rem;
+}
+
+.btn:hover {
+  box-shadow: $shadow-default;
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+  background: $gradient;
+}
+
+.round { // make buttons rounded
+  border-radius: 100px;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+
+  .btn {
+    margin-right: 16px;
+  }
+}
+
+.navbar .btn-outline-primary {
+  margin-left: 1rem;
+}
+
+/* Dark styles
+ *******************************************/
+.dark {
+  background: linear-gradient(315deg, $dark 0%, $dark-base 100%);
+
+  .btn:hover {
+    box-shadow: $shadow-dark;
+  }
+}
+
+.dark {
+  h1, h2, h3, h4, h5, h6, p, li, a {
+    color: #FFFFFF;
+  }
+}
+
+p:not(.about-title) {
+  opacity: 0.5;
+}
+
+.bg-grey {
+  background-color: #F8F9F9;
+}
+
+/* Typography
+ *******************************************/
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  margin-top: 60px;
+
+}
+
+@include media-breakpoint-down(sm) {
+  .display-1 {
+    font-size: 2.6rem;
+  }
+  .display-2 {
+    font-size: 2.4rem;
+  }
+  .display-3 {
+    font-size: 2.2rem;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+
+
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+}
+
+
+
+
+header {
+  height: 64px;
+}
+footer {
+ height: 96px;
+}
+
+#about,
+#dev-stack,
+#projects,
+#project,
+#contact {
+  padding: 100px 0;
+  @include media-breakpoint-down(md) {
+    padding: 40px 0;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
+
+  h2.section-title {
+    font-size: 44px;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    @include media-breakpoint-down(sm) {
+      font-size: 26px;
+    }
+  }
+}
+
+.card {
+  transition: all 0.15s ease-in-out;
+  @include media-breakpoint-down(sm) {
+    margin: $spacer;
+  }
+}
+
+
+/* Header Section
+ *******************************************/
+.navbarTogglerDemo01 a {
+  color: #00EBFF;
+}
+
+.navbar-toggler-icon .fa{
+  color: #00EBFF;
+  font-size: 32px;
+}
+
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+.navbar-collapse{
+  a {
+    text-align: right;
+  }
+  .btn {
+  float: right;
+  }
+}
+
+
+
+.container.treehouse-badges:not(ng-show){
+  ul{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    li{
+      padding-right: 25px;
+    }
+  }
+
+}
+
+/* Contact Section
+ *******************************************/
+#contact {
+  p {
+    text-align: center;
+  }
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  textarea {
+    height: 140px;
+  }
+}
+
+
+
+
+/* Footer Section
+ *******************************************/
+
+footer {
+  padding: 20px;
+
+  .social-media-icons, p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
+}
+
+
+.treehouse-badges {
+  text-align: center;
+  h4 img {
+    height: 50px;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+a.nav-link {
+  text-decoration: none;
+}

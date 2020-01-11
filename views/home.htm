@@ -22,7 +22,7 @@
                         </ul>
                         <div class="hero-buttons">
                             <!-- <a class="btn btn-outline-primary round" href="#" role="button">My Resume</a> -->
-                            <a class="btn btn-primary round" href="#contactMe" role="button">Hire Me</a>
+                            <a class="btn btn-primary round" href="#contact" role="button">Hire Me</a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
         <section id="dev-stack">
             <div class="container">
 
-                <h2 class="section-title text-center">My Web Development Stack</h2>
+                <h2 class="section-title text-center">Development Stack Tools</h2>
 
                 <div class="row">
                     <div class="col-sm-12 col-md-12 web-dev-stack">
@@ -60,16 +60,13 @@
     *********************************** -->
      <section id="projects" class="bg-grey">
         <div class="container">
-            <h2 class="section-title text-center">List Of My Recent Projects</h2>      
+            <h2 class="section-title text-center">Recent Projects</h2>      
             <div class="row" ng-repeat="project in projects">
                 <a class="card project-container" href="#!/project/{{$a=$index+1}}">
                     <img class="img-fluid" src="http://{{project.fields.imageUrl}}" alt="{{project.fields.title}} image" />
                     <div class="project-info">
                         <h3 class="title">{{project.fields.title}}</h3>
                         <p>Technologies</p>
-                        
-                        {{$index}}
-
                         <ul class="tech-list">
                             <li class="tech" ng-repeat="projects in project.fields.technologies">{{projects}} </li>
                         </ul>
@@ -85,7 +82,7 @@
     <!-- CONTACT SECTION
     ********************* -->
     <section id="contact" class="dark">
-        <div class="container" id="contactMe">
+        <div class="container">
             <h2 class="section-title text-center">Let's Talk</h2>
 
             <div class="row justify-content-center">
