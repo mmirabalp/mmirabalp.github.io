@@ -62,11 +62,13 @@
         <div class="container">
             <h2 class="section-title text-center">List Of My Recent Projects</h2>      
             <div class="row" ng-repeat="project in projects">
-                <a class="card project-container" href="#!/project/{{$a=$index - 1}}">
+                <a class="card project-container" href="#!/project/{{$a=$index+1}}">
                     <img class="img-fluid" src="http://{{project.fields.imageUrl}}" alt="{{project.fields.title}} image" />
                     <div class="project-info">
                         <h3 class="title">{{project.fields.title}}</h3>
                         <p>Technologies</p>
+                        
+                        {{$index}}
 
                         <ul class="tech-list">
                             <li class="tech" ng-repeat="projects in project.fields.technologies">{{projects}} </li>
