@@ -1,7 +1,6 @@
 @import "bootstrap.scss";
 @import "home.scss";
 @import "project.scss";
-@import "education.scss";
 
 header {
   height: 64px;
@@ -51,9 +50,8 @@ footer {
 
 .iconLogo{
   margin-right: 25px;
-  height: 60px;
-  width: 60px;
 }
+
 .navbar-brand img {
   @include media-breakpoint-down(sm) {
     width: 65px;
@@ -131,5 +129,5 @@ footer {
 }
 
 a.nav-link {
-  text-decoration: underline;
+  text-decoration: none;
 }
