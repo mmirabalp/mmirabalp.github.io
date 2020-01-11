@@ -33,10 +33,9 @@ footer {
 }
 
 .card {
-  border: 1px solid #f2f2f2;
   transition: all 0.15s ease-in-out;
   @include media-breakpoint-down(sm) {
-    padding: 0px;
+    margin: $spacer;
   }
 }
 
@@ -45,7 +44,11 @@ footer {
  *******************************************/
 .navbarTogglerDemo01 a {
   color: #00EBFF;
+}
 
+.navbar-toggler-icon .fa{
+  color: #00EBFF;
+  font-size: 32px;
 }
 
 .iconLogo{
@@ -54,7 +57,7 @@ footer {
 
 .navbar-brand img {
   @include media-breakpoint-down(sm) {
-    width: 65px;
+    
   }
 }
 

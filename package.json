@@ -4,13 +4,14 @@
   "description": "Web Development portfolio for Mawel Mirabal",
   "main": "gulpfile.js",
   "config": {
-    "changePath":"./src/scss/*.scss",
-    "srcPath":"./src/scss/main.scss",
-    "assetsPath":"./src/assets/css",
-    "proxyURI":"",
-    "tunnel":""
+    "changePath": "./src/scss/*.scss",
+    "srcPath": "./src/scss/main.scss",
+    "assetsPath": "./src/assets/css",
+    "proxyURI": "",
+    "tunnel": ""
   },
   "devDependencies": {
+    "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
@@ -30,7 +31,6 @@
     "start": "run-p watch & http-server .",
     "sass": "node-sass $npm_package_config_srcPath --output $npm_package_config_assetsPath",
     "watch": "onchange $npm_package_config_changePath -- run-s sass"
-
   },
   "author": "Mawel Mirabal",
   "license": "ISC",
