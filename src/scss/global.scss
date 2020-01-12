@@ -79,6 +79,10 @@ p:not(.about-title) {
 .body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  a:hover{
+    text-decoration: none;
+  }
+  
 }
 
 h1, h2, h3, h4, h5, h6 {

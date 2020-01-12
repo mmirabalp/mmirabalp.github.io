@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="75px" viewBox="0 0 58 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>7A102C3B-701B-47E0-B13E-3EAD46C51747</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-3.2%" y="-16.3%" width="106.4%" height="132.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.707350128   0 0 0 0 0.707350128   0 0 0 0 0.707350128  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#1CB1F5" offset="0%"></stop>
+            <stop stop-color="#72EFAD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1083.05908,89.019614 C1081.97249,88.042191 1080.24466,88.0738853 1079.19986,89.0904052 C1078.15507,90.1069251 1078.18895,91.7233351 1079.27553,92.7007581 L1100.87578,112.130919 L1079.27553,131.56108 C1078.18895,132.538503 1078.15507,134.154913 1079.19986,135.171433 C1080.24466,136.187953 1081.97249,136.219647 1083.05908,135.242224 C1083.05908,135.242224 1106.70454,113.990959 1106.78954,113.908265 C1107.30061,113.411022 1107.55358,112.770238 1107.55149,112.130919 C1107.55358,111.4916 1107.30061,110.850816 1106.78954,110.353574 C1106.70454,110.270879 1083.05908,89.019614 1083.05908,89.019614 Z" id="path-3"></path>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1214.000000, -1310.000000)" id="section.projects">
+            <g transform="translate(0.000000, 1077.800000)">
+                <g id="div.projects" transform="translate(150.000000, 153.600000)">
+                    <g id="Project-card">
+                        <g id="Product_1" filter="url(#filter-1)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="icon_next" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -7200,6 +7200,8 @@ p:not(.about-title) {
 .body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
+  .body a:hover {
+    text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
@@ -7399,13 +7401,11 @@ a.nav-link {
   padding: 0;
   text-align: center; }
   .dev-stack-icons li {
-    margin: 40px;
+    padding: 1rem;
     display: inline; }
-    @media (max-width: 767.98px) {
-      .dev-stack-icons li {
-        margin: 0; }
-        .dev-stack-icons li img {
-          height: 50px; } }
+
+.row .dev-stack-icons li {
+  cursor: help; }
 
 /* DEV STACK SECTION
  *******************************************/
@@ -7466,9 +7466,10 @@ a.nav-link {
       .project-container .project-info .tech-list .tech {
         border: 1px solid #1B9CD7;
         color: #1B9CD7;
-        height: 36px;
+        height: 14px;
+        line-height: 14px;
         border-radius: 4px;
-        display: inline-block;
+        display: inline;
         align-items: center;
         margin-right: 14px;
         font-size: 14px;
