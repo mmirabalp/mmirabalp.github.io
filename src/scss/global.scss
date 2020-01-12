@@ -7,6 +7,7 @@ $dark-base: #494B57;
 $shadow-default: 0 4px 20px 0 rgba(180,180,180,0.6), 0 2px 8px 0 rgba(50,50,50,0.3);
 $shadow-dark: 0 4px 20px 0 rgba(0,0,0,0.6);
 $gradient: linear-gradient(90deg, $blue 0%, $teal 100%);
+$height: 80px;
 
 
 
@@ -131,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 header {
-  height: 64px;
+  height: $height;
 }
 footer {
  height: 96px;
@@ -182,6 +183,10 @@ footer {
 
 .navbar-brand {
   margin-right: 0;
+}
+
+.navbar{
+  height: $height;
 }
 
 .navbar-collapse{

@@ -7231,7 +7231,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px; } }
 
 header {
-  height: 64px; }
+  height: 80px; }
 
 footer {
   height: 96px; }
@@ -7289,6 +7289,9 @@ footer {
 
 .navbar-brand {
   margin-right: 0; }
+
+.navbar {
+  height: 80px; }
 
 .navbar-collapse a {
   text-align: right; }
@@ -7405,7 +7408,7 @@ a.nav-link {
     display: inline; }
 
 .row .dev-stack-icons li {
-  cursor: help; }
+  cursor: hello; }
 
 /* DEV STACK SECTION
  *******************************************/
