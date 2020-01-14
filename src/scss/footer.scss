@@ -1,0 +1,27 @@
+/* Footer Section
+ *******************************************/
+footer {
+  padding: 20px;
+
+  .social-media-icons, p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+a.nav-link {
+  text-decoration: none;
+}

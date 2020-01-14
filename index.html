@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--ng-app="myApp" is the declaration of ANGULAR app with the name of 'myApp' on the index view-->
-<html lang="en" ng-app="myApp">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,10 +56,45 @@
         <!-- *** NAVIGATION SECTION *** -->
         
 
+        <div ng-app="myApp">
+            <!-- *** ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE ***-->
+            <ng-view></ng-view>
+            <!-- *** ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE ***-->
+        </div>
         
-        <!-- *** ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE ***-->
-        <ng-view></ng-view>
-        <!-- *** ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE ***-->
+
+        
+        
+        
+        <!-- CONTACT SECTION
+            ********************* -->
+        <section id="contact" class="dark">
+            <div class="container">
+                <h2 class="section-title text-center">Let's Talk</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="px-3">
+                            <p>If you have any questions or have open opportunities,
+                                feel free to send me a message here.</p>
+        
+                            <form action='https://formspree.io/mmirabalp@gmail.com' class='contactForm' id='contact_form'
+                                method='POST'>
+        
+                                <input name='email' placeholder='Email' required type='email'>
+        
+                                <input name='text' placeholder='Name' required type='text'>
+        
+                                <textarea class='input inputMessage' name='body' placeholder='Message' required></textarea>
+                                <button class='btn btn-primary btn-block round' type='submit'>Submit</button>
+                            </form>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT SECTION
+            ********************* -->
 
         <!-- *** FOOTER SECTION ***-->
         <footer class="dark">

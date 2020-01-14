@@ -1,0 +1,43 @@
+/* Header Section
+ *******************************************/
+.navbarTogglerDemo01 a {
+  color: #00EBFF;
+}
+
+.navbar-toggler-icon .fa{
+  color: #00EBFF;
+  font-size: 32px;
+}
+
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+.navbar{
+  height: $height;
+}
+
+.navbar-collapse{
+  a {
+    text-align: right;
+  }
+  .btn {
+  float: right;
+  }
+}
+
+
+
+.container.treehouse-badges:not(ng-show){
+  ul{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    li{
+      padding-right: 25px;
+    }
+  }
+
+}
