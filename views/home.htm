@@ -61,15 +61,16 @@
      <section id="projects" class="bg-grey">
         <div class="container">
             <h2 class="section-title text-center">Recent Projects</h2>      
-            <div class="row" ng-repeat="project in projects">
-                <a class="card project-container" href="#!/project/{{$a=$index+1}}">
+            <div class="row" ng-repeat="project in projects.data.items">
+            <!-- {{$a=$index+1}} -->
+                <a class="card project-container" href="/#!/project/{{$a=$index+1}}">
                     <img class="img-fluid" ng-src="http://{{project.fields.imageUrl}}" alt="{{project.fields.title}} image" />
                     <div class="d-flex justify-content-between">
                         <div class="project-info">
                             <h3 class="title">{{project.fields.title}}</h3>
                             <p>Technologies</p>
                             <ul class="tech-list">
-                                <li class="tech" ng-repeat="projects in project.fields.technologies">{{projects}} </li>
+                                <li class="tech" ng-repeat="projects in project.fields.technologies">{{projects}}</li>
                             </ul>
                         </div>
                         <div class="d-flex"><img src="../src/assets/images/icon_next.svg" alt=""></div>
@@ -77,16 +78,13 @@
                 </a>
             </div>
         </div>
+        
      </section>
     <!-- PROJECT SECTION
     ********************* -->
     
     
-        <div ng-app="myCode">
-            <!-- *** ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE ***-->
-            <ng-view></ng-view>
-            <!-- *** ALL VIEW IN MY APPLICATION WILL BE SHOWN HERE ***-->
-        </div>
+    <!-- <h3>{{code.fields.projectName}}</h3> -->
  
  
  
@@ -123,10 +121,7 @@
                             </div>
                         </div>
                 </div>
-             
-            
-        
-                
+                     
            
                 </div>
             </div>

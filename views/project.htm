@@ -1,12 +1,38 @@
 <!-- PROJECT PAGE
 ********************************************************* -->
-
+<!--<p><a href="#!home">&larr; Go Back home</a></p>-->
+        
 <section id="project">
+    <div class="container">
+        <h1 class="section-title text-center">{{project.title}}</h1>
+        <h2></h2>
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-12">
+                <img ng-src="http://{{project.fields.imageUrl}}" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-12">
+                <div class="card project-details">
+                    <h4>Project Description</h4>
+                    <p>{{project.description}}</p>
+                    <h4>Technologies / Tools</h4>
+                    <ul>
+                        <li ng-repeat="technology in project.technologies">{{technology}}</li>
+                    </ul>
+                    <span>Url: <a href="{{project.url}}">{{project.url}}</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        
+        
+<!-- <section id="project">
     <div class="container">
         <h1 class="section-title text-center">{{project.title}}</h1>
         <div class="row">
             <div class="col-xl-9 col-lg-8 col-md-12">
-                <!--<p><a href="#!home">&larr; Go Back home</a></p>-->
+     
                 <img ng-src="http://{{project.fields.imageUrl}}" alt="" class="img-fluid">
             </div>
 
@@ -28,4 +54,4 @@
 
         </div>
     </div>
-</section>
+</section> -->

@@ -7290,9 +7290,6 @@ footer {
 .navbar-brand {
   margin-right: 0; }
 
-.navbar {
-  height: 80px; }
-
 .navbar-collapse a {
   text-align: right; }
 
@@ -7327,7 +7324,8 @@ footer {
     margin-top: 10px; }
     @media (max-width: 991.98px) {
       #about .avatar {
-        margin-top: 0; } }
+        height: 120px;
+        width: 120px; } }
     @media (max-width: 767.98px) {
       #about .avatar {
         height: 90px;
