@@ -7428,15 +7428,18 @@ footer {
       .project-container .project-info .tech-list .tech {
         border: 1px solid #1B9CD7;
         color: #1B9CD7;
-        height: 14px;
-        line-height: 14px;
+        height: 20px;
+        line-height: 16px;
         border-radius: 4px;
         display: inline;
         align-items: center;
-        margin-right: 14px;
+        margin-right: 16px;
         font-size: 14px;
-        padding: 0 10px;
+        padding: 0 8px;
         text-transform: lowercase; }
+        @media (max-width: 991.98px) {
+          .project-container .project-info .tech-list .tech {
+            display: inline-block; } }
     .project-container .project-info .link .fa {
       display: inline-flex;
       margin-top: 50px;

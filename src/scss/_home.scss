@@ -174,18 +174,23 @@
       padding-left: 0;
 
       .tech {
-        $tech-height: 14px;
+        $tech-height: 16px;
         border: 1px solid $blue;
         color: $blue;
-        height: $tech-height;
+        height: 20px;
         line-height: $tech-height;
         border-radius: 4px;
         display: inline;
         align-items: center;
         margin-right: $tech-height;
         font-size: 14px;
-        padding: 0 10px;
+        padding: 0 8px;
         text-transform: lowercase;
+        
+        @include media-breakpoint-down(md) {
+          display: inline-block;
+        }
+        
       }
     }
 
