@@ -98,6 +98,11 @@
   }
 }
 
+.stack-letters{
+      height: 70px;
+      width: 70px;
+}
+
 
 
 
@@ -211,7 +216,76 @@
 
   }
 
+// .row{
+//     align-items: center;
+//     justify-content: center;
+//     align-content: center;
+// }
 
+
+
+}
+
+.code-challenge-project-container{
+height: 90.5px;	
+width: 365px;	
+border-radius: 4px;	
+background-color: #FFFFFF;	
+box-shadow: 0 4px 16px -4px rgba(180,180,180,0.5);
+padding-left: 0px;
+
+  &:hover {
+  box-shadow: $shadow-default;
+    &:after {
+      transition: opacity .15s ease-in-out;
+      opacity: 0.1;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
+  .code-challenge-name {
+      width: 201.37px;
+      color: #08131F;
+      height: 34px;
+      size: 16px;
+      justify-content: center;
+      line-height: 34px;   
+      opacity: 0.6;
+      font-family: Roboto;
+      line-height: 34px;
+      margin-left: -50px;
+      margin-top: 30px;
+  
+  }
+  .code-challenge-card{
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    width: 52px;
+    background-color: #61DAFB;
+    margin-top: 0px;
+    
+    // width: 365px;	
+    border-radius: 4px;	
+    // background-color: #FFFFFF;	
+    box-shadow: 0 4px 16px -4px rgba(180,180,180,0.5);
+  }
+
+  .code-challenge-image-container{
+    
+    .code-challenge-image{
+      height: 50px;	
+      width: 50px;	
+      background-color: #222222;
+      border-radius: 50%;
+      margin-top: 20px;
+      margin-left: 10px;
+    
+    }
+
+  }
 
 
 

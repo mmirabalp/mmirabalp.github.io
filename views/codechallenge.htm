@@ -2,25 +2,80 @@
     
     <!-- ABOUT SECTION
         *********************************** -->
-<!-- <div ng-controller="codesCtrl">
-    <section class="jumbotron jumbotron-fluid dark hero">
+<!-- <section class="code-challenge-section"> -->
+
+    <div ng-controller="CodeCtrl" class="jumbotron jumbotron-fluid hero">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-lg-3">
-                    <img src="../src/assets/images/codes/fizzbuzz.svg" alt="..." class="avatar">
+                    <img ng-src="http://{{code.fields.imageUrl}}" alt="image of code" class="code-avatar">
                 </div>
                 <div class="col-md-8 col-lg-7">
-                    <h1 class="display-4 about-header">{{codeName.fields.projectname}}</h1>
-                    <p>Write a short program that prints each number from 1 to 100 on a new line. For each multiple of 3, print "Fizz instead of the number.
-                    For each multiple of 5, print "Buzz" instead of the number. For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.</p>
+                    <h1 class="display-4 about-header">{{code.fields.projectName}}</h1>
+                    <p>{{code.fields.projectDescription}}</p>
  
                 </div>
             </div>
+        </div>  
+    </div>
+
+        <div class="code-challenge-code-area">
+        <h2 class="code-challenge-code-title">My Solution</h2>
+            <div class="row">
+                <div class="col-6 col-sm-6 -col-md-6 col-lg-6 -col-xl-6 code-challenge-left-columns">  
+                    <div class="code-challenge-code">
+                        <div class="code-challenge-code-space">
+                            <pre class="code-challenge-preview">
+                                {{code.text}}
+                            </pre>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-6 col-sm-6 -col-md-6 col-lg-6 -col-xl-6 code-challenge-right-columns">List of steps
+                    <ol>
+                        <li>Here</li>
+                        <li>Here</li>
+                        <li>Here</li>
+                        <li>Here</li>
+                        <li>Here</li>
+                        <li>Here</li>
+                    </ol>
+                </div>
+            </div>
         </div>
-    </section>   
-</div> -->
+        
+        
+        
+        
+        
+        
+        
+    
+<!-- </section> -->
+
 <!-- CODE CHALLENGE SECTION *********************************** -->
 
-<h3>Hola from codechallenge.htm
-
-</h3>
+<!-- <section id="project">
+    <div class="container">
+        <h1 class="section-title text-center">{{code.title}}</h1>
+        <h2></h2>
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-12">
+                <img ng-src="http://{{code.fields.imageUrl}}" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-12">
+                <div class="card code-details">
+                    <h4>code Description</h4>
+                    <p>{{code.fields.projectDescription}}</p>
+                    <h4>Technologies / Tools</h4>
+                    <ul>
+                        <li ng-repeat="technology in code.technologies">{{technology}}</li>
+                    </ul>
+                    <span>Url: <a href="{{code.url}}">{{project.url}}</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->

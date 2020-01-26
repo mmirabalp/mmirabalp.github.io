@@ -8,4 +8,6 @@
 .project-details {
   box-shadow: $shadow-default;
   padding: $spacer;
+  align-items: center;
+  flex-flow: nowrap;
 }

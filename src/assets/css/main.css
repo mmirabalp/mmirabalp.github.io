@@ -7375,6 +7375,10 @@ footer {
   font-size: 32px;
   text-align: center; }
 
+.stack-letters {
+  height: 70px;
+  width: 70px; }
+
 /* PROJECTS SECTION
  *******************************************/
 .project-container {
@@ -7448,6 +7452,50 @@ footer {
       color: #595970;
       font-size: 5em; }
 
+.code-challenge-project-container {
+  height: 90.5px;
+  width: 365px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 16px -4px rgba(180, 180, 180, 0.5);
+  padding-left: 0px; }
+  .code-challenge-project-container:hover {
+    box-shadow: 0 4px 20px 0 rgba(180, 180, 180, 0.6), 0 2px 8px 0 rgba(50, 50, 50, 0.3); }
+    .code-challenge-project-container:hover:after {
+      transition: opacity .15s ease-in-out;
+      opacity: 0.1; }
+      @media (max-width: 991.98px) {
+        .code-challenge-project-container:hover:after {
+          display: none; } }
+  .code-challenge-project-container .code-challenge-name {
+    width: 201.37px;
+    color: #08131F;
+    height: 34px;
+    size: 16px;
+    justify-content: center;
+    line-height: 34px;
+    opacity: 0.6;
+    font-family: Roboto;
+    line-height: 34px;
+    margin-left: -50px;
+    margin-top: 30px; }
+  .code-challenge-project-container .code-challenge-card {
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    width: 52px;
+    background-color: #61DAFB;
+    margin-top: 0px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px -4px rgba(180, 180, 180, 0.5); }
+  .code-challenge-project-container .code-challenge-image-container .code-challenge-image {
+    height: 50px;
+    width: 50px;
+    background-color: #222222;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 10px; }
+
 /* Single Project View
  *******************************************/
 .img-fluid {
@@ -7455,7 +7503,42 @@ footer {
 
 .project-details {
   box-shadow: 0 4px 20px 0 rgba(180, 180, 180, 0.6), 0 2px 8px 0 rgba(50, 50, 50, 0.3);
-  padding: 1rem; }
+  padding: 1rem;
+  align-items: center;
+  flex-flow: nowrap; }
+
+.code-challenge-code-area {
+  height: 540px;
+  width: 1440px; }
+
+.code-avatar {
+  height: 191px;
+  width: 191px;
+  background-color: #D8D8D8;
+  border-radius: 50%; }
+
+.code-challenge-code-title {
+  height: 44.8px;
+  width: 904px;
+  color: #2C2C36;
+  font-family: Merriweather;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 44.8px;
+  margin-top: 58px;
+  margin-left: 150px; }
+
+.code-challenge-right-columns {
+  float: right; }
+
+.code-challenge-preview {
+  color: 63; }
+
+.code-challenge-code {
+  height: 352px;
+  width: 531px;
+  border-radius: 9px;
+  background-color: #2B303B; }
 
 /* Contact Section
  *******************************************/

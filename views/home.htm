@@ -34,9 +34,18 @@
     *********************************** -->
         <section id="dev-stack">
             <div class="container">
-                <h2 class="section-title text-center">Development Stack Tools</h2>
+                <h2 class="section-title text-center">Development Tools</h2>
+                
                 <div class="row">
                     <div class="mx-auto px-3">
+                        <!-- <div class="row dev-stack-icons">
+                            <div class="container">
+                                <img class="stack-letters" src="../src/assets/images/technology/leters/mysqlm.svg" alt="">
+                                <img class="stack-letters" src="../src/assets/images/technology/leters/expresse.svg" alt="">
+                                <img class="stack-letters" src="../src/assets/images/technology/leters/reactr.svg" alt="">
+                                <img class="stack-letters" src="../src/assets/images/technology/leters/nodejsn.svg" alt="">
+                            </div>
+                        </div> -->
                         <div class="row dev-stack-icons">
                             <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/html5.svg" alt="HTML5" data-toggle="tooltip" data-placement="top" title="HTML5"></li>
                             <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/css3.svg" alt="CSS3" data-toggle="tooltip" data-placement="top" title="CSS3"></li>
@@ -44,12 +53,14 @@
                             <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/github.svg" alt="GITHUB" data-toggle="tooltip" data-placement="top" title="GITHUB"></li>
                         </div>
                         <div class="row dev-stack-icons">
-                            <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/sass.svg" alt="SASS" data-toggle="tooltip" data-placement="bottom" title="SASS"></li>
-                            <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/bootstrap.svg" alt="BOOTSTRAP" data-toggle="tooltip" data-placement="bottom" title="BOOTSTRAP"></li>
+                            <!-- <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/mysql2.svg" alt="SASS" data-toggle="tooltip" data-placement="bottom" title="SASS"></li> -->
+                            <!-- <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/expressjs.svg" alt="BOOTSTRAP" data-toggle="tooltip" data-placement="bottom" title="BOOTSTRAP"></li> -->
                             <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/react.svg" alt="REACT" data-toggle="tooltip" data-placement="bottom" title="REACT"></li>
                             <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/nodejs2.svg" alt="NODEJS" data-toggle="tooltip" data-placement="bottom" title="NODEJS"></li>
+                            <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/bootstrap.svg" alt="BOOTSTRAP" data-toggle="tooltip" data-placement="bottom" title="BOOTSTRAP"></li>
+                            <li class="col-sm-3 col-6"><img src="../src/assets/images/technology/sass.svg" alt="SASS" data-toggle="tooltip" data-placement="bottom" title="SASS"></li>
                         </div>
-                    </div>
+                        
                 </div>
             </div>
         </section>
@@ -68,10 +79,11 @@
                     <div class="d-flex justify-content-between">
                         <div class="project-info">
                             <h3 class="title">{{project.fields.title}}</h3>
-                            <p>Technologies</p>
+                            <p>{{project.fields.description}}</p>
+                            <!-- <p>Technologies</p>
                             <ul class="tech-list">
                                 <li class="tech" ng-repeat="projects in project.fields.technologies">{{projects}}</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="d-flex"><img src="../src/assets/images/icon_next.svg" alt=""></div>
                     </div>
@@ -82,50 +94,28 @@
      </section>
     <!-- PROJECT SECTION
     ********************* -->
-    
-    
-    <!-- <h3>{{code.fields.projectName}}</h3> -->
- 
+
  
  
 <!-- CODE CHALLENGES SECTION *********************************** -->
-<!-- <section id="dev-stack">
+<!-- <section id="dev-stack" class="code-challenges-section">
     <div class="container">
-        <h2 class="section-title text-center">Code Challenges (Section under construction)</h2>
-        <div class="row">
-            <div class="mx-auto px-12">
-                <div class="row dev-stack-icons" ng-module="myCode">
-                    <div class="row" ng-repeat="code in codes">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-2 col-lg-3">
-                                    <img src="../src/assets/images/codes/fizzbuzz.svg" alt="..." class="avatar">
-                                </div>
-                                <div class="col-md-8 col-lg-7 card">
-                                    <h1 class="display-4 about-header">{{code.fields.projectName}}</h1>
-                                    <p>This is a code to find in a list of 1- 100 numbers the multiples of 3, 5 and both.</p>
+        <h2 class="section-title text-center">Small Projects (Section under construction)</h2>  
+        <div class="mx-auto px-1">
+            <div class="row dev-stack-icons" ng-module="myCode">
+                <div class="col-md-4 code-challenge-project-container" ng-repeat="code in codes.data.items">
+                    <a id="code-challenge-card" ng-style="{background: code.fields.color}" class="card code-challenge-card flex-row  col-md-4" href="/#!/codechallenge/{{$a=$index+1}}">            
+                        <div class="code-challenge-image-container">
+                            <img title="{{code.fields.technology}}" data-toggle="tooltip" data-placement="top" class="code-challenge-image" ng-src="http://{{code.fields.imageUrl}}" alt="..." class="">
+                        </div>
                         
-                                </div>
-                            </div>
-                        </div>
-                    </div>       
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-2 col-lg-3">
-                                    <img src="../src/assets/images/codes/sort.svg" alt="..." class="avatar">
-                                </div>
-                                <div class="col-md-8 col-lg-7 card">
-                                    <h1 class="display-4 about-header">Sort</h1>
-                                    <p>This is a code to sort numbers from 1 - 100.</p>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                     
-           
-                </div>
+                        <div>
+                            <p class="code-challenge-name">{{code.fields.projectName}}</p>
+                        </div>            
+                    </a>
+                </div>   
             </div>
-        </div>
+        </div> 
     </div>
 </section> -->
 
